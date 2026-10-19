@@ -26,19 +26,19 @@ Related: [Solved Numericals](./02-solved-numericals.md) · [Practice Range](./03
 
 ```mermaid
 flowchart TD
-    A[Rigid Body] --> B[Centre of Mass]
-    A --> C[Rotational Kinematics]
+    A["Rigid Body"] --> B["Centre of Mass"]
+    A --> C["Rotational Kinematics"]
     C --> C1["θ, ω, α"]
-    C --> C2[Equations of motion<br/>analogous to linear]
-    A --> D[Torque τ = r × F]
-    D --> E[Moment of Inertia I]
-    E --> E1[Theorems:<br/>Parallel & Perpendicular axis]
-    D --> F["τ = I α<br/>(rotational Newton's 2nd law)"]
-    F --> G[Angular Momentum L = I ω]
-    G --> H["Conservation of L<br/>(τ_ext = 0)"]
-    F --> J[Rotational KE = ½ I ω²]
-    A --> K[Rolling Motion]
-    K --> K1[Rolling without slipping<br/>v = Rω]
+    C --> C2["Equations of motion<br/>analogous to linear"]
+    A --> D["Torque: τ = r cross F"]
+    D --> E["Moment of Inertia I"]
+    E --> E1["Theorems: Parallel and Perpendicular axis"]
+    D --> F["τ = I α<br/>rotational Newton 2nd law"]
+    F --> G["Angular Momentum L = I ω"]
+    G --> H["Conservation of L when τ_ext = 0"]
+    F --> J["Rotational KE = ½ I ω²"]
+    A --> K["Rolling Motion"]
+    K --> K1["Rolling without slipping: v = Rω"]
     K --> J
     style A fill:#2563eb,color:#fff
     style D fill:#dc2626,color:#fff

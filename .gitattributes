@@ -1,0 +1,17 @@
+# Normalise line endings: store everything as LF in the repo, so the files are
+# identical across Windows, Linux, and the GitHub web editor. This silences the
+# "LF will be replaced by CRLF" warnings on Windows.
+* text=auto eol=lf
+
+# Explicit text types (rendered on GitHub)
+*.md   text eol=lf
+*.svg  text eol=lf
+*.gitkeep text eol=lf
+*.gitignore text eol=lf
+
+# Binary types (never touch line endings)
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.gif  binary
+*.pdf  binary

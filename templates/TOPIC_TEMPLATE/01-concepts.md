@@ -22,8 +22,8 @@ Related: [Solved Numericals](./02-solved-numericals.md) · [Practice Range](./03
 
 ```mermaid
 flowchart TD
-    A[<Central idea>] --> B[<Sub-idea>]
-    A --> C[<Sub-idea>]
+    A["Central idea"] --> B["Sub-idea 1"]
+    A --> C["Sub-idea 2"]
 ```
 
 ---

@@ -35,6 +35,7 @@ symbols** — they throw `ParseError`. Use the LaTeX command instead:
 - Unicode symbols are fine in **plain prose** (outside `$…$`) — only math mode is strict.
 - Use GitHub alert callouts for colour: `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`, `> [!IMPORTANT]`.
 - Diagrams: Mermaid for flow/classification; committed SVG for physics figures.
+- **Mermaid on GitHub is strict** — its renderer is stricter than VS Code's. **Always wrap every node label in double quotes**, e.g. `D["Torque: τ = r × F"]`, especially when the label contains `=`, `(`, `)`, `&`, `:`, `×`, or `<br/>`. Unquoted special characters cause "Unable to render rich display". Avoid `<` and `>` inside labels.
 
 ## Conventions
 
