@@ -1,0 +1,14 @@
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*~
+.obsidian/
+.vscode/
+
+# Temp / export
+*.tmp
+*.bak
+/_export/
+/.cache/

@@ -1,0 +1,3 @@
+# This folder holds your raw scanned/photographed handwritten notes.
+# Drop images or PDFs here, then ask Claude to rewrite them into clean markdown
+# notes in the parent notes/ folder. This .gitkeep keeps the empty folder in git.
