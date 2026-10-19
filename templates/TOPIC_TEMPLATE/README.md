@@ -34,8 +34,8 @@ symbols** — they throw `ParseError`. Use the LaTeX command instead:
 - Write units as `\mathrm{...}`, e.g. `\mathrm{N\cdot m}`, `\mathrm{rad/s^2}`.
 - Unicode symbols are fine in **plain prose** (outside `$…$`) — only math mode is strict.
 - Use GitHub alert callouts for colour: `> [!NOTE]`, `> [!TIP]`, `> [!WARNING]`, `> [!IMPORTANT]`.
-- Diagrams: Mermaid for flow/classification; committed SVG for physics figures.
-- **Mermaid on GitHub is strict** — its renderer is stricter than VS Code's. **Always wrap every node label in double quotes**, e.g. `D["Torque: τ = r × F"]`, especially when the label contains `=`, `(`, `)`, `&`, `:`, `×`, or `<br/>`. Unquoted special characters cause "Unable to render rich display". Avoid `<` and `>` inside labels.
+- Diagrams: **committed SVG for everything**, including the concept map — GitHub serves SVG as an image and always renders it.
+- **Avoid Mermaid for anything that must show on GitHub.** GitHub's Mermaid support is unreliable and often fails with "Unable to render rich display" even on valid, quoted diagrams. Use an SVG instead (see `05-rotational-motion/assets/concept-map.svg`). If you want an editable Mermaid source too, keep it in a ` ```text ` block (not ` ```mermaid `) so GitHub never tries to render it.
 
 ## Conventions
 

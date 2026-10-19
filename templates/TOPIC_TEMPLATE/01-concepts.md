@@ -20,11 +20,11 @@ Related: [Solved Numericals](./02-solved-numericals.md) · [Practice Range](./03
 
 ## 🗺️ Concept map
 
-```mermaid
-flowchart TD
-    A["Central idea"] --> B["Sub-idea 1"]
-    A --> C["Sub-idea 2"]
-```
+<!-- Use a committed SVG for the concept map — GitHub reliably renders SVG, but often
+     fails to render Mermaid ("Unable to render rich display"). See 05-rotational-motion
+     for an example. Keep the Mermaid source in a ```text block for editing if you like. -->
+
+![<Topic> concept map](./assets/concept-map.svg)
 
 ---
 

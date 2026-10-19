@@ -24,28 +24,30 @@ Related: [Solved Numericals](./02-solved-numericals.md) · [Practice Range](./03
 
 ## 🗺️ Concept map
 
-```mermaid
+![Rotational Motion concept map](./assets/concept-map.svg)
+
+<details><summary>Mermaid source (for editing in VS Code / Obsidian — GitHub renders the SVG above)</summary>
+
+```text
 flowchart TD
     A["Rigid Body"] --> B["Centre of Mass"]
     A --> C["Rotational Kinematics"]
     C --> C1["θ, ω, α"]
     C --> C2["Equations of motion<br/>analogous to linear"]
-    A --> D["Torque: τ = r cross F"]
+    A --> D["Torque: τ = r × F"]
     D --> E["Moment of Inertia I"]
-    E --> E1["Theorems: Parallel and Perpendicular axis"]
-    D --> F["τ = I α<br/>rotational Newton 2nd law"]
+    E --> E1["Parallel & Perpendicular axis theorems"]
+    D --> F["Newton's 2nd law: τ = I α"]
     F --> G["Angular Momentum L = I ω"]
-    G --> H["Conservation of L when τ_ext = 0"]
+    G --> H["Conservation of L (τ_ext = 0)"]
     F --> J["Rotational KE = ½ I ω²"]
     A --> K["Rolling Motion"]
     K --> K1["Rolling without slipping: v = Rω"]
     K --> J
-    style A fill:#2563eb,color:#fff
-    style D fill:#dc2626,color:#fff
-    style E fill:#059669,color:#fff
-    style G fill:#7c3aed,color:#fff
-    style K fill:#ea580c,color:#fff
 ```
+> To use it as a live diagram, change the ` ```text ` fence to ` ```mermaid ` in an editor that supports Mermaid.
+
+</details>
 
 ---
 
