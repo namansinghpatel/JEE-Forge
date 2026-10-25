@@ -7,7 +7,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 | # | Chapter | Status |
 |---|---|---|
 | 01 | Units & Measurements | ⬜ planned |
-| 02 | Kinematics | ⬜ planned |
+| 02 | [Kinematics](./02-kinematics/) | ✅ built |
 | 03 | Laws of Motion | ⬜ planned |
 | 04 | Work, Energy & Power | ⬜ planned |
 | 05 | [System of Particles & Rotational Motion](./05-rotational-motion/) | ✅ built |
@@ -25,6 +25,14 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 ---
 
 ## Built-chapter detail
+
+### 02 — Kinematics ✅
+Covers all parts: **rectilinear motion, projectile motion, relative velocity**. Concepts (10 sections:
+7 core + a 3-section Advanced cluster — calculus of non-uniform acceleration, projectile on an incline /
+radius of curvature, relative-motion closest approach & river/rain; LaTeX + 4 SVGs: concept map,
+motion graphs, projectile, relative velocity) · 35 solved numericals (10/15/10, with strategy steps) ·
+35 practice problems (approach-hints + collapsible solutions) · deep-dive · formula recap ·
+notes entry point (`notes/notes.md`) · "JEE Questions by Me" log.
 
 ### 05 — Rotational Motion ✅
 Concepts (9 sections, LaTeX + Mermaid + 6 SVGs) · 35 solved numericals (10/15/10, with strategy steps) ·
