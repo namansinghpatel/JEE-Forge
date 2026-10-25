@@ -12,7 +12,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 | 04 | Permutations & Combinations | ⬜ planned |
 | 05 | Binomial Theorem | ⬜ planned |
 | 06 | Straight Lines | ⬜ planned |
-| 07 | Conic Sections | ⬜ planned |
+| 07 | [Conic Sections](./07-conic-sections/) | ✅ built |
 | 08 | Trigonometry | ⬜ planned |
 | 09 | Limits (introduction) | ⬜ planned |
 | 10 | Statistics & Probability (basics) | ⬜ planned |
@@ -33,8 +33,18 @@ Concepts (8 sections, LaTeX + 3 SVGs: concept map, discriminant cases, parabola)
 (approach-hints + collapsible solutions) · deep-dive (root-location toolkit, range method) ·
 formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log.
 
+### 07 — Conic Sections ✅
+Concepts (7 sections covering all four conics — circle, parabola, ellipse, hyperbola —
+with the focus–directrix / eccentricity unifying idea; LaTeX + 5 SVGs: concept map + one per conic) ·
+35 solved numericals (10/15/10, across all four conics, with strategy steps) ·
+35 practice problems (approach-hints + collapsible solutions) ·
+deep-dive (parametric forms, the "T = 0" tangent rule, focal chords, tangency conditions,
+director circle, completing the square) · formula recap · notes entry point (`notes/notes.md`) ·
+"JEE Questions by Me" log.
+
 ---
 
 > **Weightage note:** Quadratics are tested directly and, more importantly, as a *tool* inside
 > calculus, coordinate geometry and trigonometry — the discriminant and Vieta's relations recur
-> throughout JEE Main & Advanced.
+> throughout JEE Main & Advanced. Conic sections are among the highest-yield coordinate-geometry
+> chapters: the parabola, ellipse and hyperbola each appear in JEE Main and Advanced almost every year.
