@@ -1,0 +1,97 @@
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Conic Sections Flash</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --fg:#141a2a; --muted:#5b6478; --border:#e6e8f0;
+    --title-bg:#13294b; --title-fg:#ffffff; --chip:#eef1f7;
+    --blue:#2563eb;--blue-bg:#eaf1ff; --green:#15803d;--green-bg:#e9f8ef;
+    --amber:#b45309;--amber-bg:#fdf3e3; --rose:#be123c;--rose-bg:#fdeaef;
+    --violet:#6d28d9;--violet-bg:#f1ebfe; --teal:#0e7490;--teal-bg:#e6f6fa;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#0f213f;--title-fg:#eaf1ff;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#0f213f;--title-fg:#eaf1ff;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.4;}
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px;max-width:1180px;margin:0 auto;}
+  .mast{background:var(--title-bg);color:var(--title-fg);border-radius:16px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;box-shadow:0 6px 24px rgba(10,20,45,.18);}
+  .mast h1{font-family:"Fraunces",Georgia,serif;font-weight:700;margin:0;font-size:clamp(22px,4.6vw,34px);letter-spacing:.3px;text-wrap:balance;}
+  .mast .sub{opacity:.82;font-size:13px;margin-top:2px;}
+  .mast .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px;white-space:nowrap;}
+  .band{display:flex;align-items:center;gap:10px;margin:26px 2px 12px;}
+  .band .dot{width:12px;height:12px;border-radius:50%;}
+  .band h2{font-family:"Fraunces",Georgia,serif;font-size:16px;margin:0;letter-spacing:.3px;text-transform:uppercase;}
+  .band .line{flex:1;height:1px;background:var(--border);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-left-width:5px;border-radius:13px;padding:13px 15px 14px;min-width:0;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 2px rgba(10,20,45,.04);}
+  .card h3{margin:0;font-size:15px;font-weight:700;display:flex;align-items:baseline;gap:8px;}
+  .card h3 .n{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:13px;width:22px;height:22px;flex:none;border-radius:7px;display:inline-grid;place-items:center;color:#fff;}
+  .math{font-size:15px;overflow-x:auto;padding:2px 0;}
+  .grab{font-size:12.5px;color:var(--muted);}
+  .grab b{color:var(--fg);font-weight:700;}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--fg);}
+  table.mini{border-collapse:collapse;font-size:12.5px;width:100%;}
+  table.mini td{border-top:1px solid var(--border);padding:3px 6px;vertical-align:top;}
+  table.mini td:first-child{color:var(--muted);white-space:nowrap;}
+  .c-blue{border-left-color:var(--blue);background:color-mix(in srgb,var(--blue-bg) 70%,var(--surface));} .c-blue h3 .n{background:var(--blue);} .c-blue h3{color:var(--blue);}
+  .c-green{border-left-color:var(--green);background:color-mix(in srgb,var(--green-bg) 70%,var(--surface));} .c-green h3 .n{background:var(--green);} .c-green h3{color:var(--green);}
+  .c-amber{border-left-color:var(--amber);background:color-mix(in srgb,var(--amber-bg) 70%,var(--surface));} .c-amber h3 .n{background:var(--amber);} .c-amber h3{color:var(--amber);}
+  .c-rose{border-left-color:var(--rose);background:color-mix(in srgb,var(--rose-bg) 70%,var(--surface));} .c-rose h3 .n{background:var(--rose);} .c-rose h3{color:var(--rose);}
+  .c-violet{border-left-color:var(--violet);background:color-mix(in srgb,var(--violet-bg) 70%,var(--surface));} .c-violet h3 .n{background:var(--violet);} .c-violet h3{color:var(--violet);}
+  .c-teal{border-left-color:var(--teal);background:color-mix(in srgb,var(--teal-bg) 70%,var(--surface));} .c-teal h3 .n{background:var(--teal);} .c-teal h3{color:var(--teal);}
+  .foot{margin-top:24px;text-align:center;color:var(--muted);font-size:12px;}
+  mjx-container{color:var(--fg);} mjx-container svg{max-width:100%;}
+</style>
+<div class="wrap">
+<div class="mast"><div><h1>Conic Sections Flash</h1><div class="sub">Class 11 Maths · circle · parabola · ellipse · hyperbola — one-glance revision</div></div><span class="badge">JEE MAIN · ADVANCED</span></div>
+<div class="band"><span class="dot" style="background:var(--blue)"></span><h2>Foundations</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-blue"><h3><span class="n">1</span>Eccentricity picks the shape</h3><table class="mini"><tr><td>\(e=0\)</td><td>circle</td></tr><tr><td>\(0<e<1\)</td><td>ellipse</td></tr><tr><td>\(e=1\)</td><td>parabola</td></tr><tr><td>\(e>1\)</td><td>hyperbola</td></tr></table></div>
+<div class="card c-blue"><h3><span class="n">2</span>Focus–directrix</h3><div class="math">\(\dfrac{PS}{PM}=e\)</div><div class="grab">One rule generates all four conics.</div></div>
+<div class="card c-blue"><h3><span class="n">3</span>Read the type</h3><div class="grab">No \(xy\): \(A=C\) circle; one square → parabola; same signs → ellipse; opposite → hyperbola.</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--green)"></span><h2>Circle &amp; Parabola</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-green"><h3><span class="n">4</span>Circle</h3><div class="math">\((x-h)^2+(y-k)^2=r^2\)</div><div class="grab">General: centre \((-g,-f)\), \(r=\sqrt{g^2+f^2-c}\).</div></div>
+<div class="card c-green"><h3><span class="n">5</span>Circle tangent</h3><div class="math">\(xx_1+yy_1=r^2\)</div><div class="grab">Line tangent when distance from centre \(=r\).</div></div>
+<div class="card c-green"><h3><span class="n">6</span>Parabola \(y^2=4ax\)</h3><div class="grab">Focus \((a,0)\), directrix \(x=-a\), latus rectum \(4a\).</div></div>
+<div class="card c-green"><h3><span class="n">7</span>Parametric point</h3><div class="math">\((at^2,\,2at)\)</div><div class="grab">Focal chord: \(t_1t_2=-1\).</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--violet)"></span><h2>Ellipse &amp; Hyperbola</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-violet"><h3><span class="n">8</span>Ellipse</h3><div class="math">\(\dfrac{x^2}{a^2}+\dfrac{y^2}{b^2}=1\)</div><div class="grab">\(b^2=a^2(1-e^2)\); foci \((\pm ae,0)\); \(PS_1+PS_2=2a\).</div></div>
+<div class="card c-violet"><h3><span class="n">9</span>Hyperbola</h3><div class="math">\(\dfrac{x^2}{a^2}-\dfrac{y^2}{b^2}=1\)</div><div class="grab">\(b^2=a^2(e^2-1)\); asymptotes \(y=\pm\tfrac{b}{a}x\); \(|PS_1-PS_2|=2a\).</div></div>
+<div class="card c-violet"><h3><span class="n">10</span>Latus rectum</h3><div class="math">\(\dfrac{2b^2}{a}\)</div><div class="grab">Same for ellipse &amp; hyperbola.</div></div>
+<div class="card c-violet"><h3><span class="n">11</span>Tangent conditions</h3><table class="mini"><tr><td>circle</td><td>\(c^2=r^2(1+m^2)\)</td></tr><tr><td>parabola</td><td>\(c=a/m\)</td></tr><tr><td>ellipse</td><td>\(c^2=a^2m^2+b^2\)</td></tr><tr><td>hyperbola</td><td>\(c^2=a^2m^2-b^2\)</td></tr></table></div>
+<div class="card c-violet"><h3><span class="n">12</span>Director circle</h3><div class="math">\(x^2+y^2=a^2+b^2\)</div><div class="grab">Locus of points with perpendicular tangents (ellipse).</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--rose)"></span><h2>Traps</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-rose"><h3><span class="n">13</span>Which axis is major?</h3><div class="grab">Compare denominators — the larger one sets the major/transverse axis direction.</div></div>
+<div class="card c-rose"><h3><span class="n">14</span>Centre not at origin</h3><div class="grab"><b>Complete the square</b> first, then use the standard formulas about the new centre.</div></div>
+<div class="card c-rose"><h3><span class="n">15</span>Sign flip</h3><div class="grab">\(+b^2\) (ellipse) vs \(-b^2\) (hyperbola) in both \(b^2\)-relation and tangent condition.</div></div>
+<div class="card c-rose"><h3><span class="n">16</span>One tangent rule</h3><div class="grab">\(T=0\): tangent at a point <b>and</b> chord of contact from outside.</div></div>
+</div>
+<div class="foot">JEE-Forge · Conic Sections flash sheet · companion to the full 07-conic-sections notes</div>
+</div>
+<script>
+  window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"global"},startup:{typeset:true}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" id="MathJax-script"></script>

@@ -1,0 +1,100 @@
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Chemical Equilibrium Flash</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --fg:#141a2a; --muted:#5b6478; --border:#e6e8f0;
+    --title-bg:#13294b; --title-fg:#ffffff; --chip:#eef1f7;
+    --blue:#2563eb;--blue-bg:#eaf1ff; --green:#15803d;--green-bg:#e9f8ef;
+    --amber:#b45309;--amber-bg:#fdf3e3; --rose:#be123c;--rose-bg:#fdeaef;
+    --violet:#6d28d9;--violet-bg:#f1ebfe; --teal:#0e7490;--teal-bg:#e6f6fa;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#0f213f;--title-fg:#eaf1ff;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#0f213f;--title-fg:#eaf1ff;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.4;}
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px;max-width:1180px;margin:0 auto;}
+  .mast{background:var(--title-bg);color:var(--title-fg);border-radius:16px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;box-shadow:0 6px 24px rgba(10,20,45,.18);}
+  .mast h1{font-family:"Fraunces",Georgia,serif;font-weight:700;margin:0;font-size:clamp(22px,4.6vw,34px);letter-spacing:.3px;text-wrap:balance;}
+  .mast .sub{opacity:.82;font-size:13px;margin-top:2px;}
+  .mast .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px;white-space:nowrap;}
+  .band{display:flex;align-items:center;gap:10px;margin:26px 2px 12px;}
+  .band .dot{width:12px;height:12px;border-radius:50%;}
+  .band h2{font-family:"Fraunces",Georgia,serif;font-size:16px;margin:0;letter-spacing:.3px;text-transform:uppercase;}
+  .band .line{flex:1;height:1px;background:var(--border);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-left-width:5px;border-radius:13px;padding:13px 15px 14px;min-width:0;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 2px rgba(10,20,45,.04);}
+  .card h3{margin:0;font-size:15px;font-weight:700;display:flex;align-items:baseline;gap:8px;}
+  .card h3 .n{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:13px;width:22px;height:22px;flex:none;border-radius:7px;display:inline-grid;place-items:center;color:#fff;}
+  .math{font-size:15px;overflow-x:auto;padding:2px 0;}
+  .grab{font-size:12.5px;color:var(--muted);}
+  .grab b{color:var(--fg);font-weight:700;}
+  .pill{display:inline-block;font-size:11px;font-weight:700;padding:2px 8px;border-radius:999px;background:var(--chip);color:var(--fg);}
+  table.mini{border-collapse:collapse;font-size:12.5px;width:100%;}
+  table.mini td{border-top:1px solid var(--border);padding:3px 6px;vertical-align:top;}
+  table.mini td:first-child{color:var(--muted);white-space:nowrap;}
+  .c-blue{border-left-color:var(--blue);background:color-mix(in srgb,var(--blue-bg) 70%,var(--surface));} .c-blue h3 .n{background:var(--blue);} .c-blue h3{color:var(--blue);}
+  .c-green{border-left-color:var(--green);background:color-mix(in srgb,var(--green-bg) 70%,var(--surface));} .c-green h3 .n{background:var(--green);} .c-green h3{color:var(--green);}
+  .c-amber{border-left-color:var(--amber);background:color-mix(in srgb,var(--amber-bg) 70%,var(--surface));} .c-amber h3 .n{background:var(--amber);} .c-amber h3{color:var(--amber);}
+  .c-rose{border-left-color:var(--rose);background:color-mix(in srgb,var(--rose-bg) 70%,var(--surface));} .c-rose h3 .n{background:var(--rose);} .c-rose h3{color:var(--rose);}
+  .c-violet{border-left-color:var(--violet);background:color-mix(in srgb,var(--violet-bg) 70%,var(--surface));} .c-violet h3 .n{background:var(--violet);} .c-violet h3{color:var(--violet);}
+  .c-teal{border-left-color:var(--teal);background:color-mix(in srgb,var(--teal-bg) 70%,var(--surface));} .c-teal h3 .n{background:var(--teal);} .c-teal h3{color:var(--teal);}
+  .foot{margin-top:24px;text-align:center;color:var(--muted);font-size:12px;}
+  mjx-container{color:var(--fg);} mjx-container svg{max-width:100%;}
+</style>
+<div class="wrap">
+<div class="mast"><div><h1>Chemical Equilibrium Flash</h1><div class="sub">Class 11 Chemistry · Physical · one-glance revision of the whole chapter</div></div><span class="badge">JEE MAIN · ADVANCED</span></div>
+<div class="band"><span class="dot" style="background:var(--blue)"></span><h2>Foundations</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-blue"><h3><span class="n">1</span>Dynamic equilibrium</h3><div class="math">\(\text{rate}_{fwd}=\text{rate}_{rev}\)</div><div class="grab">Both reactions still run — amounts <b>constant, not equal</b>. Closed system only.</div></div>
+<div class="card c-blue"><h3><span class="n">2</span>Equilibrium constant \(K_c\)</h3><div class="math">\[K_c=\dfrac{[C]^c[D]^d}{[A]^a[B]^b}\]</div><div class="grab">Products over reactants, each to its power. <b>T only.</b></div></div>
+<div class="card c-blue"><h3><span class="n">3</span>\(K_p\) (gases)</h3><div class="math">\(K_p=\dfrac{(p_C)^c(p_D)^d}{(p_A)^a(p_B)^b}\)</div><div class="grab">Partial pressures instead of concentrations.</div></div>
+<div class="card c-blue"><h3><span class="n">4</span>\(K_p\)–\(K_c\) link</h3><div class="math">\[K_p=K_c(RT)^{\Delta n}\]</div><div class="grab">\(\Delta n\)=gas moles (prod−react). \(\Delta n=0\Rightarrow K_p=K_c\).</div></div>
+<div class="card c-blue"><h3><span class="n">5</span>Meaning of \(K\)</h3><div class="grab"><span class='pill'>K ≫ 1</span> products &nbsp;<span class='pill'>K ≪ 1</span> reactants. Units \((\text{mol/L})^{\Delta n}\).</div></div>
+<div class="card c-blue"><h3><span class="n">6</span>Heterogeneous</h3><div class="grab"><b>Omit pure solids &amp; liquids</b> — e.g. \(\text{CaCO}_3(s)\rightleftharpoons\text{CaO}(s)+\text{CO}_2(g)\Rightarrow K_c=[\text{CO}_2]\).</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--green)"></span><h2>Quantify It</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-green"><h3><span class="n">7</span>Manipulating \(K\)</h3><table class="mini"><tr><td>reverse</td><td>\(1/K\)</td></tr><tr><td>×n coeff</td><td>\(K^n\)</td></tr><tr><td>add rxns</td><td>\(K_1K_2\)</td></tr></table></div>
+<div class="card c-green"><h3><span class="n">8</span>Temperature on \(K\)</h3><div class="grab">Exo: \(T\uparrow\Rightarrow K\downarrow\). Endo: \(T\uparrow\Rightarrow K\uparrow\).</div></div>
+<div class="card c-green"><h3><span class="n">9</span>Reaction quotient \(Q\)</h3><div class="math">\(Q<K\Rightarrow\to,\ \ Q>K\Rightarrow\leftarrow\)</div><div class="grab">Same form, current values.</div></div>
+<div class="card c-green"><h3><span class="n">10</span>Degree of dissociation</h3><div class="math">\(K_p=\dfrac{\alpha^2}{1-\alpha^2}P\ \ (A\rightleftharpoons B+C)\)</div><div class="grab">Set up with an ICE table.</div></div>
+<div class="card c-green"><h3><span class="n">11</span>Case \(A\rightleftharpoons 2B\)</h3><div class="math">\(K_p=\dfrac{4\alpha^2}{1-\alpha^2}P\)</div><div class="grab">The factor 4 — don't mix the two.</div></div>
+<div class="card c-green"><h3><span class="n">12</span>Vapour density → α</h3><div class="math">\(\alpha=\dfrac{D-d}{(n-1)d}\)</div><div class="grab">Dissociation lowers vapour density.</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--amber)"></span><h2>Le Chatelier — shift to oppose</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-amber"><h3><span class="n">13</span>Concentration</h3><div class="grab">Add reactant → forward; add product → backward.</div></div>
+<div class="card c-amber"><h3><span class="n">14</span>Pressure / volume</h3><div class="grab">↑P → fewer-gas-moles side. \(\Delta n=0\): no effect.</div></div>
+<div class="card c-amber"><h3><span class="n">15</span>Temperature</h3><div class="grab">Heating → endothermic direction — the <b>only</b> thing that changes \(K\).</div></div>
+<div class="card c-amber"><h3><span class="n">16</span>Catalyst &amp; inert gas</h3><div class="grab">Catalyst: no shift. Inert gas at const V: no shift.</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--rose)"></span><h2>Traps</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-rose"><h3><span class="n">17</span>Top mistakes</h3><div class="grab">forgetting to <b>divide moles by V</b>; solids in \(K\); wrong α-formula; \(R\) not matching the pressure unit.</div></div>
+<div class="card c-rose"><h3><span class="n">18</span>Inert-gas trap</h3><div class="grab">Const volume → partial pressures unchanged → <b>no shift</b>, though total P rises.</div></div>
+<div class="card c-violet"><h3><span class="n">19</span>3-step solve</h3><div class="grab">balanced eqn → <b>ICE table</b> → convert → substitute.</div></div>
+</div>
+<div class="foot">JEE-Forge · Chemical Equilibrium flash sheet · companion to the full 06-chemical-equilibrium notes</div>
+</div>
+<script>
+  window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"global"},startup:{typeset:true}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" id="MathJax-script"></script>
