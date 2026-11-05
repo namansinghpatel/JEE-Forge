@@ -131,4 +131,43 @@ $x\to\tfrac{x+x_1}{2}$, $y\to\tfrac{y+y_1}{2}$.
 
 ---
 
+## 📸 Handwritten Notes (originals)
+
+Scanned reference notes for this chapter, filed under [`notes/scans/`](./notes/scans/). These are the original handwritten sheets that back up the formulas above.
+
+<details open>
+<summary><b>Circle</b></summary>
+
+![Equation of a circle](./notes/scans/Class_11_MT_Equation_Of_Circle.jpg)
+![Equation of a circle — 2](./notes/scans/Class_11_MT_Equation_Of_Circle_01.jpg)
+![Equation of a circle — 3](./notes/scans/Class_11_MT_Equation_Of_Circle_02.jpg)
+![Properties of a circle](./notes/scans/Class_11_MT_Properties_Of_Circle.jpg)
+![Tangent and normal](./notes/scans/Class_11_MT_Tangent_And_Normal.jpg)
+
+</details>
+
+<details open>
+<summary><b>Hyperbola</b></summary>
+
+![Hyperbola](./notes/scans/Class_11_MT_Hyperbola.jpg)
+![Elements of a hyperbola — 1](./notes/scans/Class_11_MT_Element_Of_Hyperbola_01.jpg)
+![Elements of a hyperbola — 3](./notes/scans/Class_11_MT_Element_Of_Hyperbola_03.jpg)
+![Elements of a hyperbola — 4](./notes/scans/Class_11_MT_Element_Of_Hyperbola_04.jpg)
+![Elements of a hyperbola — 5](./notes/scans/Class_11_MT_Element_Of_Hyperbola_05.jpg)
+![Elements of a hyperbola — 6](./notes/scans/Class_11_MT_Element_Of_Hyperbola_06.jpg)
+![Applications of a hyperbola](./notes/scans/Class_11_MT_Application_Of_Hyperbola.jpg)
+![Applications of a hyperbola — 2](./notes/scans/Class_11_MT_Application_Of_Hyperbola_01.jpg)
+
+</details>
+
+<details open>
+<summary><b>Translation &amp; rotation of axes</b></summary>
+
+![Translation and rotation of axes](./notes/scans/Class_11_MT_Translation_and_Roation_Of_Axes.jpg)
+![Equations for translation / rotation of axes](./notes/scans/Class_11_MT_Equation_Of_Translation_For_Roation_Of_Axes.jpg)
+
+</details>
+
+---
+
 **Back to:** [Concepts](./01-concepts.md) · [Solved Numericals](./02-solved-numericals.md) · [Practice](./03-practice.md) · [Deep Dive](./04-deep-dive.md)

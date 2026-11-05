@@ -112,4 +112,14 @@ $$\vec v_{AB} = \vec v_A - \vec v_B$$
 
 ---
 
+## 📸 Handwritten Notes (originals)
+
+Scanned reference notes for this chapter, filed under [`notes/scans/`](./notes/scans/). These are the original handwritten sheets that back up the formulas above.
+
+![Rectilinear motion](./notes/scans/Class_11_PH_Rectilinear_Motion_01.jpg)
+![Projectile motion](./notes/scans/Class_11_PH_Projectile_Motion_01.jpg)
+![Relative velocity — river &amp; boat](./notes/scans/Class_11_PH_River_Boat.jpg)
+
+---
+
 **Back to:** [Concepts](./01-concepts.md) · [Solved Numericals](./02-solved-numericals.md) · [Practice](./03-practice.md) · [Deep Dive](./04-deep-dive.md)
