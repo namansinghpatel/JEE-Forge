@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 400" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="tr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="400" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Periodic Trends — direction of increase</text>
+
+  <!-- schematic grid (period across, group down) -->
+  <g>
+    <!-- table box -->
+    <rect x="120" y="80" width="520" height="250" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+    <!-- across arrow -->
+    <line x1="140" y1="110" x2="600" y2="110" stroke="#2563eb" stroke-width="2.5" marker-end="url(#tr)"/>
+    <text x="370" y="100" text-anchor="middle" font-size="12.5" font-weight="700" fill="#1d4ed8">across a period →</text>
+    <!-- down arrow -->
+    <line x1="150" y1="130" x2="150" y2="310" stroke="#16a34a" stroke-width="2.5" marker-end="url(#tr)"/>
+    <text x="150" y="330" text-anchor="middle" font-size="12.5" font-weight="700" fill="#166534">down a group ↓</text>
+
+    <!-- labels inside -->
+    <text x="420" y="170" text-anchor="middle" font-size="12.5" fill="#1d4ed8">radius ↓ · IE ↑ · EN ↑</text>
+    <text x="420" y="192" text-anchor="middle" font-size="12.5" fill="#1d4ed8">Δ_eg H more − · non-metallic ↑</text>
+    <text x="300" y="250" text-anchor="middle" font-size="12.5" fill="#166534">radius ↑ · IE ↓ · EN ↓</text>
+    <text x="300" y="272" text-anchor="middle" font-size="12.5" fill="#166534">metallic ↑ · oxide more basic</text>
+  </g>
+
+  <!-- right: quick reference arrows -->
+  <rect x="680" y="80" width="400" height="250" rx="8" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="880" y="106" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">At a glance</text>
+
+  <text x="705" y="140" font-size="12.5" fill="#475569">Atomic radius</text>
+  <text x="1055" y="140" text-anchor="end" font-size="12.5" fill="#2563eb">→ ↓&nbsp;&nbsp;↓ ↑</text>
+  <text x="705" y="168" font-size="12.5" fill="#475569">Ionisation enthalpy</text>
+  <text x="1055" y="168" text-anchor="end" font-size="12.5" fill="#2563eb">→ ↑&nbsp;&nbsp;↓ ↓</text>
+  <text x="705" y="196" font-size="12.5" fill="#475569">Electron gain (−ve)</text>
+  <text x="1055" y="196" text-anchor="end" font-size="12.5" fill="#2563eb">→ more−&nbsp;&nbsp;↓ less−</text>
+  <text x="705" y="224" font-size="12.5" fill="#475569">Electronegativity</text>
+  <text x="1055" y="224" text-anchor="end" font-size="12.5" fill="#2563eb">→ ↑&nbsp;&nbsp;↓ ↓</text>
+  <text x="705" y="252" font-size="12.5" fill="#475569">Metallic character</text>
+  <text x="1055" y="252" text-anchor="end" font-size="12.5" fill="#2563eb">→ ↓&nbsp;&nbsp;↓ ↑</text>
+
+  <line x1="700" y1="270" x2="1060" y2="270" stroke="#e2e8f0" stroke-width="1"/>
+  <text x="880" y="294" text-anchor="middle" font-size="11.5" fill="#be123c">Anomaly dips: B&lt;Be, Al&lt;Mg · O&lt;N, S&lt;P</text>
+  <text x="880" y="314" text-anchor="middle" font-size="11.5" fill="#be123c">Cl's Δ_eg H more negative than F</text>
+
+  <text x="560" y="372" text-anchor="middle" font-size="11.5" fill="#64748b">Left column shows each column as: period-direction &amp; group-direction change</text>
+</svg>

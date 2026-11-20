@@ -10,7 +10,7 @@ Chapters are tagged **Physical / Organic / Inorganic**, since that is how JEE ch
 |---|---|---|---|
 | 01 | [Some Basic Concepts (Mole Concept)](./01-mole-concept/) | Physical | ✅ built |
 | 02 | [Structure of Atom](./02-structure-of-atom/) | Physical | ✅ built |
-| 03 | Classification of Elements & Periodicity | Inorganic | ⬜ planned |
+| 03 | [Classification of Elements & Periodicity](./03-classification-periodicity/) | Inorganic | ✅ built |
 | 04 | Chemical Bonding & Molecular Structure | Inorganic | ⬜ planned |
 | 05 | Thermodynamics (chemical) | Physical | ⬜ planned |
 | 06 | [Equilibrium (Chemical Equilibrium)](./06-chemical-equilibrium/) | Physical | ✅ built (chemical) |
@@ -38,6 +38,16 @@ exceptions; LaTeX + 2 SVGs: concept map, orbital shapes) · 35 solved numericals
 steps) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive · formula recap ·
 notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in
 `notes/scans/`: two of the user's own full-overview formula sheets, plus the full chapter notes PDF.
+
+### 03 — Classification of Elements & Periodicity ✅
+Covers **the modern periodic law, long-form table, s/p/d/f blocks, and all periodic trends** (atomic/ionic
+radius, ionisation enthalpy, electron gain enthalpy, electronegativity). Concepts (10 sections: 7 core + a
+3-section Advanced cluster — effective nuclear charge & Slater's rules, half/fully-filled anomalies &
+successive ionisation, diagonal relationships & position→properties; LaTeX + 2 SVGs: concept map, trend
+map) · 35 solved problems (10/15/10, reasoning + a few numericals: Z_eff, position-from-config,
+successive-IE group assignment) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive
+· formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source
+material filed in `notes/scans/`: the formula sheet (rendered PNG + vector PDF) and the full chapter notes PDF.
 
 ### 06 — Equilibrium (Chemical Equilibrium half) ✅
 Concepts (8 sections: dynamic equilibrium, Kc, Kp = Kc(RT)^Δn, properties of K, Q vs K,

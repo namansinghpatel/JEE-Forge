@@ -1,0 +1,93 @@
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Periodicity Flash</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --fg:#141a2a; --muted:#5b6478; --border:#e6e8f0;
+    --title-bg:#3b1a5e; --title-fg:#ffffff; --chip:#eef1f7;
+    --blue:#2563eb;--blue-bg:#eaf1ff; --green:#15803d;--green-bg:#e9f8ef;
+    --amber:#b45309;--amber-bg:#fdf3e3; --rose:#be123c;--rose-bg:#fdeaef;
+    --violet:#6d28d9;--violet-bg:#f1ebfe; --teal:#0e7490;--teal-bg:#e6f6fa;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#2a1142;--title-fg:#f3eaff;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#2a1142;--title-fg:#f3eaff;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.4;}
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px;max-width:1180px;margin:0 auto;}
+  .mast{background:var(--title-bg);color:var(--title-fg);border-radius:16px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;box-shadow:0 6px 24px rgba(10,20,45,.18);}
+  .mast h1{font-family:"Fraunces",Georgia,serif;font-weight:700;margin:0;font-size:clamp(22px,4.6vw,34px);letter-spacing:.3px;text-wrap:balance;}
+  .mast .sub{opacity:.82;font-size:13px;margin-top:2px;}
+  .mast .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px;white-space:nowrap;}
+  .band{display:flex;align-items:center;gap:10px;margin:26px 2px 12px;}
+  .band .dot{width:12px;height:12px;border-radius:50%;}
+  .band h2{font-family:"Fraunces",Georgia,serif;font-size:16px;margin:0;letter-spacing:.3px;text-transform:uppercase;}
+  .band .line{flex:1;height:1px;background:var(--border);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-left-width:5px;border-radius:13px;padding:13px 15px 14px;min-width:0;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 2px rgba(10,20,45,.04);}
+  .card h3{margin:0;font-size:15px;font-weight:700;display:flex;align-items:baseline;gap:8px;}
+  .card h3 .n{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:13px;width:22px;height:22px;flex:none;border-radius:7px;display:inline-grid;place-items:center;color:#fff;}
+  .math{font-size:15px;overflow-x:auto;padding:2px 0;}
+  .grab{font-size:12.5px;color:var(--muted);}
+  .grab b{color:var(--fg);font-weight:700;}
+  .c-blue{border-left-color:var(--blue);background:color-mix(in srgb,var(--blue-bg) 70%,var(--surface));} .c-blue h3 .n{background:var(--blue);} .c-blue h3{color:var(--blue);}
+  .c-green{border-left-color:var(--green);background:color-mix(in srgb,var(--green-bg) 70%,var(--surface));} .c-green h3 .n{background:var(--green);} .c-green h3{color:var(--green);}
+  .c-amber{border-left-color:var(--amber);background:color-mix(in srgb,var(--amber-bg) 70%,var(--surface));} .c-amber h3 .n{background:var(--amber);} .c-amber h3{color:var(--amber);}
+  .c-rose{border-left-color:var(--rose);background:color-mix(in srgb,var(--rose-bg) 70%,var(--surface));} .c-rose h3 .n{background:var(--rose);} .c-rose h3{color:var(--rose);}
+  .c-violet{border-left-color:var(--violet);background:color-mix(in srgb,var(--violet-bg) 70%,var(--surface));} .c-violet h3 .n{background:var(--violet);} .c-violet h3{color:var(--violet);}
+  .foot{margin-top:24px;text-align:center;color:var(--muted);font-size:12px;}
+  mjx-container{color:var(--fg);} mjx-container svg{max-width:100%;}
+</style>
+<div class="wrap">
+<div class="mast"><div><h1>Periodicity Flash</h1><div class="sub">Class 11 Chemistry · blocks · periodic trends · anomalies · Z_eff</div></div><span class="badge">JEE MAIN · ADVANCED</span></div>
+<div class="band"><span class="dot" style="background:var(--blue)"></span><h2>Table Structure</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-blue"><h3><span class="n">1</span>Modern law</h3><div class="grab">Properties periodic in <b>atomic number Z</b> (Moseley).</div></div>
+<div class="card c-blue"><h3><span class="n">2</span>Period &amp; group</h3><div class="grab">Period = valence \(n\); group = valence config.</div></div>
+<div class="card c-blue"><h3><span class="n">3</span>Blocks</h3><div class="grab">s \(ns^{1\text-2}\) · p \(ns^2np^{1\text-6}\) · d \((n{-}1)d\) · f \((n{-}2)f\).</div></div>
+<div class="card c-blue"><h3><span class="n">4</span>Elements/period</h3><div class="grab">2, 8, 8, 18, 18, 32, 32.</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--green)"></span><h2>Trends</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-green"><h3><span class="n">5</span>Atomic radius</h3><div class="grab">across → <b>↓</b> · down ↓ <b>↑</b>.</div></div>
+<div class="card c-green"><h3><span class="n">6</span>Ionisation enthalpy</h3><div class="grab">across → <b>↑</b> · down ↓ <b>↓</b>.</div></div>
+<div class="card c-green"><h3><span class="n">7</span>Electron gain enthalpy</h3><div class="grab">across → more − · down ↓ less −.</div></div>
+<div class="card c-green"><h3><span class="n">8</span>Electronegativity</h3><div class="grab">across → ↑ · down ↓; <b>F is max</b>.</div></div>
+<div class="card c-green"><h3><span class="n">9</span>Ionic size</h3><div class="grab">cation &lt; atom &lt; anion; isoelectronic: more protons → smaller.</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--amber)"></span><h2>Anomalies</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-amber"><h3><span class="n">10</span>IE dips (filled s²)</h3><div class="grab">B &lt; Be, Al &lt; Mg.</div></div>
+<div class="card c-amber"><h3><span class="n">11</span>IE dips (half p³)</h3><div class="grab">O &lt; N, S &lt; P.</div></div>
+<div class="card c-amber"><h3><span class="n">12</span>F vs Cl</h3><div class="grab">Cl's \(\Delta_{eg}H\) <b>more</b> negative (F too small).</div></div>
+<div class="card c-amber"><h3><span class="n">13</span>Successive IE</h3><div class="grab"><b>Big jump → noble-gas core</b>; electrons before = group.</div></div>
+</div>
+<div class="band"><span class="dot" style="background:var(--rose)"></span><h2>Advanced</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-violet"><h3><span class="n">14</span>Z_eff (Slater)</h3><div class="math">\(Z_{eff}=Z-\sigma\)</div><div class="grab">same-group 0.35, (n−1) 0.85, deeper 1.0.</div></div>
+<div class="card c-violet"><h3><span class="n">15</span>Diagonal</h3><div class="grab">Li~Mg, Be~Al, B~Si.</div></div>
+<div class="card c-violet"><h3><span class="n">16</span>Oxides</h3><div class="grab">basic → amphoteric (Al₂O₃) → acidic across a period.</div></div>
+<div class="card c-rose"><h3><span class="n">17</span>Master variable</h3><div class="grab">smaller + high Z_eff → holds/attracts electrons harder.</div></div>
+</div>
+<div class="foot">JEE-Forge · Periodicity flash sheet · companion to the full 03-classification-periodicity notes</div>
+</div>
+<script>
+  window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"global"},startup:{typeset:true}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" id="MathJax-script"></script>
