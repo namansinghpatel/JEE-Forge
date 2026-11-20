@@ -8,7 +8,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 |---|---|---|
 | 01 | [Sets, Relations & Functions](./01-sets-relations-functions/) | ✅ built |
 | 02 | Complex Numbers & Quadratic Equations — [*Complex Numbers*](./02-complex-numbers/) + [*Quadratic Equations*](./02-quadratic-equations/) | ✅ built (both halves) |
-| 03 | Sequences & Series | ⬜ planned |
+| 03 | [Sequences & Series](./03-sequences-series/) | ✅ built |
 | 04 | Permutations & Combinations | ⬜ planned |
 | 05 | Binomial Theorem | ⬜ planned |
 | 06 | Straight Lines | ⬜ planned |
@@ -49,6 +49,15 @@ Concepts (8 sections, LaTeX + 3 SVGs: concept map, discriminant cases, parabola)
 35 solved numericals (10/15/10, with strategy steps) · 35 practice problems
 (approach-hints + collapsible solutions) · deep-dive (root-location toolkit, range method) ·
 formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log.
+
+### 03 — Sequences & Series ✅
+Covers **AP, GP, infinite GP, the three means (AM/GM/HM), HP, and special-power sums**. Concepts (10 sections:
+7 core + a 3-section Advanced cluster — AGP & the multiply-by-$r$ method, telescoping / method of differences,
+the Vₙ method & summation techniques; LaTeX + 1 SVG concept map) · 35 solved numericals (10/15/10, with strategy
+steps) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive (a_n from S_n, AGP engine,
+telescoping, Vₙ, AM–GM optimisation, power-series sums, ratio-of-sums shortcut) · formula recap · notes entry
+point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`: the
+formula sheet (rendered PNG + vector PDF). _No scanned notes PDF — Maths Notes folders are empty for Class 11._
 
 ### 07 — Conic Sections ✅
 Concepts (7 sections covering all four conics — circle, parabola, ellipse, hyperbola —
