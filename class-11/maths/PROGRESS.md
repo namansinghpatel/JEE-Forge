@@ -11,7 +11,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 | 03 | [Sequences & Series](./03-sequences-series/) | ✅ built |
 | 04 | Permutations & Combinations | ⬜ planned |
 | 05 | Binomial Theorem | ⬜ planned |
-| 06 | Straight Lines | ⬜ planned |
+| 06 | [Straight Lines](./06-straight-lines/) | ✅ built |
 | 07 | [Conic Sections](./07-conic-sections/) | ✅ built |
 | 08 | Trigonometry | ⬜ planned |
 | 09 | Limits (introduction) | ⬜ planned |
@@ -58,6 +58,17 @@ steps) · 35 practice problems (approach-hints + collapsible solutions) · deep-
 telescoping, Vₙ, AM–GM optimisation, power-series sums, ratio-of-sums shortcut) · formula recap · notes entry
 point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`: the
 formula sheet (rendered PNG + vector PDF). _No scanned notes PDF — Maths Notes folders are empty for Class 11._
+
+### 06 — Straight Lines ✅
+Covers **slope & angle, the five forms of a line, general form, perpendicular distance & distance between
+parallels, collinearity/area, foot & image of a point, and the family of lines**. Concepts (10 sections: 7 core
++ a 3-section Advanced cluster — angle bisectors, concurrency & the locus method, pair of straight lines
+$ax^2+2hxy+by^2=0$; LaTeX + 1 SVG concept map) · 35 solved numericals (10/15/10, with strategy steps) · 35
+practice problems (approach-hints + collapsible solutions) · deep-dive (family trick, one-ratio foot/image,
+bisector sign rule, pair of lines, translation of axes, triangle centres & Euler line, locus method) · formula
+recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in
+`notes/scans/`: the formula sheet (rendered PNG + vector PDF). _No scanned notes PDF — Maths Notes folders are
+empty for Class 11._
 
 ### 07 — Conic Sections ✅
 Concepts (7 sections covering all four conics — circle, parabola, ellipse, hyperbola —

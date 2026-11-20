@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="sl" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="440" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Straight Lines — concept map</text>
+
+  <!-- central node -->
+  <rect x="460" y="58" width="200" height="50" rx="10" fill="#1e293b"/>
+  <text x="560" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">A line: ax + by + c = 0</text>
+  <text x="560" y="98" text-anchor="middle" font-size="11.5" fill="#cbd5e1">slope m = −a/b = tan θ</text>
+
+  <!-- Slope & angle -->
+  <rect x="70" y="150" width="210" height="96" rx="10" fill="#eaf1ff" stroke="#2563eb"/>
+  <text x="175" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1d4ed8">Slope &amp; angle</text>
+  <text x="175" y="195" text-anchor="middle" font-size="12" fill="#334155">m = (y₂−y₁)/(x₂−x₁)</text>
+  <text x="175" y="214" text-anchor="middle" font-size="11.5" fill="#334155">∥: m₁=m₂  ⟂: m₁m₂=−1</text>
+  <text x="175" y="233" text-anchor="middle" font-size="11" fill="#64748b">tan θ = |(m₁−m₂)/(1+m₁m₂)|</text>
+  <line x1="480" y1="100" x2="235" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#sl)"/>
+
+  <!-- Forms -->
+  <rect x="320" y="150" width="210" height="96" rx="10" fill="#e9f8ef" stroke="#15803d"/>
+  <text x="425" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#15803d">Forms of a line</text>
+  <text x="425" y="194" text-anchor="middle" font-size="11.5" fill="#334155">y = mx + c</text>
+  <text x="425" y="212" text-anchor="middle" font-size="11.5" fill="#334155">y − y₁ = m(x − x₁)</text>
+  <text x="425" y="230" text-anchor="middle" font-size="11.5" fill="#334155">x/a + y/b = 1</text>
+  <line x1="520" y1="108" x2="455" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#sl)"/>
+
+  <!-- Distance -->
+  <rect x="590" y="150" width="210" height="96" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="695" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">Distance</text>
+  <text x="695" y="196" text-anchor="middle" font-size="11.5" fill="#334155">point→line:</text>
+  <text x="695" y="214" text-anchor="middle" font-size="12" fill="#334155">|ax₁+by₁+c|/√(a²+b²)</text>
+  <text x="695" y="233" text-anchor="middle" font-size="11" fill="#64748b">parallels: |c₁−c₂|/√(a²+b²)</text>
+  <line x1="600" y1="108" x2="665" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#sl)"/>
+
+  <!-- Points -->
+  <rect x="840" y="150" width="210" height="96" rx="10" fill="#fdeaef" stroke="#be123c"/>
+  <text x="945" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#be123c">Points &amp; area</text>
+  <text x="945" y="195" text-anchor="middle" font-size="11.5" fill="#334155">collinear ⟺ area = 0</text>
+  <text x="945" y="213" text-anchor="middle" font-size="11.5" fill="#334155">foot / image via one ratio</text>
+  <text x="945" y="232" text-anchor="middle" font-size="11" fill="#64748b">reflection across a line</text>
+  <line x1="640" y1="100" x2="890" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#sl)"/>
+
+  <!-- Advanced band -->
+  <text x="560" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6d28d9">ADVANCED — turn the geometry into algebra</text>
+
+  <rect x="90" y="310" width="220" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="200" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Family of lines</text>
+  <text x="200" y="355" text-anchor="middle" font-size="11.5" fill="#334155">L₁ + λL₂ = 0</text>
+  <text x="200" y="374" text-anchor="middle" font-size="11.5" fill="#334155">through an intersection</text>
+
+  <rect x="340" y="310" width="220" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="450" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Angle bisectors</text>
+  <text x="450" y="355" text-anchor="middle" font-size="11.5" fill="#334155">equidistant → ±</text>
+  <text x="450" y="374" text-anchor="middle" font-size="11.5" fill="#334155">acute/obtuse sign rule</text>
+
+  <rect x="590" y="310" width="220" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="700" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Concurrency</text>
+  <text x="700" y="355" text-anchor="middle" font-size="11.5" fill="#334155">3×3 determinant = 0</text>
+  <text x="700" y="374" text-anchor="middle" font-size="11.5" fill="#334155">+ triangle centres</text>
+
+  <rect x="840" y="310" width="210" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="945" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Pair of lines</text>
+  <text x="945" y="355" text-anchor="middle" font-size="11.5" fill="#334155">ax²+2hxy+by²=0</text>
+  <text x="945" y="374" text-anchor="middle" font-size="11.5" fill="#334155">⟂ iff a+b=0</text>
+
+  <text x="560" y="422" text-anchor="middle" font-size="11.5" fill="#64748b">Slope decides ∥/⟂; pick the form; distance &amp; family do the heavy lifting; locus method ties it all together.</text>
+</svg>
