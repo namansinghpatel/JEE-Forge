@@ -12,7 +12,7 @@ Chapters are tagged **Physical / Organic / Inorganic**, since that is how JEE ch
 | 02 | [Structure of Atom](./02-structure-of-atom/) | Physical | ✅ built |
 | 03 | [Classification of Elements & Periodicity](./03-classification-periodicity/) | Inorganic | ✅ built |
 | 04 | Chemical Bonding & Molecular Structure | Inorganic | ⬜ planned |
-| 05 | Thermodynamics (chemical) | Physical | ⬜ planned |
+| 05 | [Thermodynamics (chemical)](./05-thermodynamics/) | Physical | ✅ built |
 | 06 | [Equilibrium (Chemical Equilibrium)](./06-chemical-equilibrium/) | Physical | ✅ built (chemical) |
 | 07 | Redox Reactions | Physical | ⬜ planned |
 | 08 | Organic Chemistry — Basic Principles (GOC) | Organic | ⬜ planned |
@@ -48,6 +48,15 @@ map) · 35 solved problems (10/15/10, reasoning + a few numericals: Z_eff, posit
 successive-IE group assignment) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive
 · formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source
 material filed in `notes/scans/`: the formula sheet (rendered PNG + vector PDF) and the full chapter notes PDF.
+
+### 05 — Thermodynamics ✅
+Covers **the first law, enthalpy, thermochemistry (Hess, formation, bond enthalpy), entropy, and Gibbs
+energy / spontaneity**. Concepts (10 sections: 7 core + a 3-section Advanced cluster — bond enthalpy /
+Kirchhoff / Born–Haber, ΔG°–K & the spontaneity-switch temperature, reversible vs irreversible &
+isothermal/adiabatic work; LaTeX + 2 SVGs: concept map, Hess's-law cycle) · 35 solved numericals
+(10/15/10, with strategy steps) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive
+· formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source
+material filed in `notes/scans/`: two of the user's own full formula sheets, plus the full chapter notes PDF.
 
 ### 06 — Equilibrium (Chemical Equilibrium half) ✅
 Concepts (8 sections: dynamic equilibrium, Kc, Kp = Kc(RT)^Δn, properties of K, Q vs K,
