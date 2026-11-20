@@ -6,7 +6,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 
 | # | Chapter | Status |
 |---|---|---|
-| 01 | Units & Measurements | ⬜ planned |
+| 01 | [Units & Measurements](./01-units-measurements/) | ✅ built |
 | 02 | [Kinematics](./02-kinematics/) | ✅ built |
 | 03 | [Laws of Motion](./03-laws-of-motion/) | ✅ built |
 | 04 | [Work, Energy & Power](./04-work-energy-power/) | ✅ built |
@@ -25,6 +25,18 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 ---
 
 ## Built-chapter detail
+
+### 01 — Units & Measurements ✅
+Covers **physical quantities & the SI system, fundamental vs derived quantities, dimensions & dimensional
+formulae, the principle of homogeneity, significant figures, errors and their propagation**. Concepts (10
+sections: 7 core + a 3-section Advanced cluster — the dimensional (power-law) method & its limits, order of
+magnitude / scientific notation / estimation, precision vs accuracy & least count; LaTeX + 1 SVG concept map) ·
+35 solved numericals (10/15/10, with strategy steps) · 35 practice problems (approach-hints + collapsible
+solutions) · deep-dive (power-law method, dimensional unit conversion, why the error rules hold, sig-fig
+discipline, limitations, a memorise-these dimensional-formula table) · formula recap · notes entry point
+(`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`: three
+formula/revision sheets (fundamental & derived quantities poster, unit-&-dimension master-formula sheet, 50-point
+rapid-revision sheet) and the full chapter notes PDF.
 
 ### 02 — Kinematics ✅
 Covers all parts: **rectilinear motion, projectile motion, relative velocity**. Concepts (10 sections:
@@ -62,4 +74,5 @@ notes entry point (`notes/notes.md`) · "JEE Questions by Me" log.
 
 > **Weightage note:** Laws of Motion and Rotational Motion are consistently among the highest-yield
 > mechanics chapters in JEE Main & Advanced (typically 1–2 questions each in Main, and a frequent source
-> of multi-concept problems in Advanced).
+> of multi-concept problems in Advanced). Units & Measurements is lighter in direct weightage but is the
+> foundation — dimensional analysis and error handling recur throughout the whole syllabus.
