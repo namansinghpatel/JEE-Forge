@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="fb" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Free-Body Diagrams — three standard cases</text>
+
+  <!-- Case 1: block on horizontal surface -->
+  <text x="190" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">On a surface (pushed)</text>
+  <line x1="70" y1="250" x2="310" y2="250" stroke="#64748b" stroke-width="3"/>
+  <rect x="150" y="200" width="80" height="50" rx="4" fill="#dbeafe" stroke="#2563eb"/>
+  <!-- weight -->
+  <line x1="190" y1="225" x2="190" y2="305" stroke="#dc2626" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="200" y="300" font-size="12" fill="#dc2626">W = mg</text>
+  <!-- normal -->
+  <line x1="190" y1="225" x2="190" y2="145" stroke="#16a34a" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="200" y="150" font-size="12" fill="#16a34a">N</text>
+  <!-- applied -->
+  <line x1="190" y1="225" x2="285" y2="225" stroke="#2563eb" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="250" y="218" font-size="12" fill="#2563eb">F</text>
+  <!-- friction -->
+  <line x1="190" y1="225" x2="110" y2="225" stroke="#d97706" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="110" y="218" font-size="12" fill="#d97706">f</text>
+
+  <!-- Case 2: block on incline -->
+  <text x="560" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#16a34a">On an incline</text>
+  <path d="M460,250 L680,250 L680,140 Z" fill="#ecfdf5" stroke="#16a34a" stroke-width="2"/>
+  <text x="648" y="245" font-size="12" fill="#166534">θ</text>
+  <!-- block on incline -->
+  <g transform="translate(600,188) rotate(-26.57)">
+    <rect x="-28" y="-20" width="56" height="34" rx="4" fill="#dcfce7" stroke="#16a34a"/>
+  </g>
+  <!-- weight down -->
+  <line x1="600" y1="188" x2="600" y2="268" stroke="#dc2626" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="606" y="266" font-size="12" fill="#dc2626">mg</text>
+  <!-- components -->
+  <line x1="600" y1="188" x2="636" y2="206" stroke="#dc2626" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#fb)"/>
+  <text x="636" y="222" font-size="11" fill="#dc2626">mg sinθ</text>
+  <!-- normal perpendicular to incline -->
+  <line x1="600" y1="188" x2="564" y2="170" stroke="#16a34a" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="520" y="168" font-size="12" fill="#16a34a">N</text>
+  <text x="498" y="300" font-size="11.5" fill="#475569">N = mg cosθ · drive = mg sinθ</text>
+
+  <!-- Case 3: hanging block -->
+  <text x="930" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#b45309">Hanging (equilibrium)</text>
+  <line x1="880" y1="110" x2="980" y2="110" stroke="#64748b" stroke-width="3"/>
+  <line x1="930" y1="110" x2="930" y2="190" stroke="#334155" stroke-width="2"/>
+  <rect x="898" y="190" width="64" height="48" rx="4" fill="#fef3c7" stroke="#d97706"/>
+  <!-- tension up -->
+  <line x1="930" y1="190" x2="930" y2="120" stroke="#16a34a" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="940" y="150" font-size="12" fill="#16a34a">T</text>
+  <!-- weight down -->
+  <line x1="930" y1="238" x2="930" y2="308" stroke="#dc2626" stroke-width="2.5" marker-end="url(#fb)"/>
+  <text x="940" y="300" font-size="12" fill="#dc2626">W = mg</text>
+  <text x="930" y="335" text-anchor="middle" font-size="11.5" fill="#475569">T = mg</text>
+</svg>

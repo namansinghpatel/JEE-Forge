@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 450" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="450" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">Laws of Motion — Concept Map</text>
+
+  <!-- root -->
+  <rect x="450" y="52" width="220" height="46" rx="10" fill="#6366f1" stroke="#4338ca"/>
+  <text x="560" y="74" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">Why motion changes: Force</text>
+  <text x="560" y="90" text-anchor="middle" font-size="11.5" fill="#e0e7ff">F = dp/dt = ma · free-body diagrams</text>
+
+  <!-- connectors root -> 3 pillars -->
+  <path d="M560,98 L185,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M560,98 L560,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M560,98 L935,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 3 pillars -->
+  <rect x="60" y="152" width="250" height="52" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="185" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">Newton's three laws</text>
+  <text x="185" y="193" text-anchor="middle" font-size="11.5" fill="#1e40af">inertia · F=ma · action-reaction</text>
+
+  <rect x="435" y="152" width="250" height="52" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="560" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">Friction &amp; inclines</text>
+  <text x="560" y="193" text-anchor="middle" font-size="11.5" fill="#15803d">static / kinetic, pulleys</text>
+
+  <rect x="810" y="152" width="250" height="52" rx="10" fill="#fef3c7" stroke="#d97706"/>
+  <text x="935" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Circular motion</text>
+  <text x="935" y="193" text-anchor="middle" font-size="11.5" fill="#b45309">net inward force = mv²/r</text>
+
+  <!-- connectors to detail -->
+  <path d="M185,204 L185,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M560,204 L560,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M935,204 L935,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- detail boxes -->
+  <rect x="60" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#2563eb"/>
+  <text x="185" y="274" text-anchor="middle" font-size="12" fill="#334155">1st: Fnet=0 → const velocity</text>
+  <text x="185" y="292" text-anchor="middle" font-size="12" fill="#334155">2nd: F = ma; impulse J=Δp</text>
+  <text x="185" y="312" text-anchor="middle" font-size="12" fill="#334155">3rd: equal &amp; opposite, 2 bodies</text>
+
+  <rect x="435" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#16a34a"/>
+  <text x="560" y="272" text-anchor="middle" font-size="12" fill="#334155">fs ≤ μsN, fk = μkN</text>
+  <text x="560" y="290" text-anchor="middle" font-size="12" fill="#334155">incline: a = g(sinθ − μcosθ)</text>
+  <text x="560" y="310" text-anchor="middle" font-size="12" fill="#334155">pulley: a = Fext / Σm</text>
+
+  <rect x="810" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#d97706"/>
+  <text x="935" y="274" text-anchor="middle" font-size="12" fill="#334155">ac = v²/r = ω²r</text>
+  <text x="935" y="292" text-anchor="middle" font-size="12" fill="#334155">flat road: v=√(μgr)</text>
+  <text x="935" y="312" text-anchor="middle" font-size="12" fill="#334155">banking: tanθ = v²/rg</text>
+
+  <!-- advanced band -->
+  <rect x="120" y="352" width="880" height="56" rx="9" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="560" y="375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">Advanced:</text>
+  <text x="560" y="394" text-anchor="middle" font-size="12" fill="#3730a3">pseudo-forces in accelerating frames · angle of repose &amp; two-block systems · vertical circle (√5gr) · banking with friction · conical pendulum</text>
+
+  <!-- footer -->
+  <text x="560" y="432" text-anchor="middle" font-size="11.5" fill="#64748b">The habit that solves it all: draw the free-body diagram, resolve on smart axes, apply ΣF = ma per body</text>
+</svg>
