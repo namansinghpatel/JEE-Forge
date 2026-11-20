@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ee" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Electronic Effects — how electron density shifts</text>
+
+  <!-- Inductive -->
+  <text x="190" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Inductive (through σ bonds)</text>
+  <text x="190" y="120" text-anchor="middle" font-size="15" fill="#334155">Cl — C — C — C</text>
+  <line x1="150" y1="135" x2="110" y2="135" stroke="#2563eb" stroke-width="2" marker-end="url(#ee)"/>
+  <text x="128" y="160" text-anchor="middle" font-size="11" fill="#2563eb">δ⁻</text>
+  <text x="190" y="195" text-anchor="middle" font-size="11.5" fill="#475569">–I pull weakens along the chain;</text>
+  <text x="190" y="213" text-anchor="middle" font-size="11.5" fill="#475569">alkyl groups are +I (push).</text>
+
+  <!-- Resonance -->
+  <text x="560" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#16a34a">Resonance (through π / conjugation)</text>
+  <!-- simple conjugated chain with delocalisation -->
+  <circle cx="490" cy="130" r="5" fill="#16a34a"/>
+  <circle cx="540" cy="130" r="5" fill="#16a34a"/>
+  <circle cx="590" cy="130" r="5" fill="#16a34a"/>
+  <circle cx="640" cy="130" r="5" fill="#16a34a"/>
+  <path d="M490,125 Q515,105 540,125" fill="none" stroke="#16a34a" stroke-width="1.6"/>
+  <path d="M590,125 Q615,105 640,125" fill="none" stroke="#16a34a" stroke-width="1.6"/>
+  <path d="M465,150 Q565,185 665,150" fill="none" stroke="#16a34a" stroke-width="1.6" stroke-dasharray="5 3"/>
+  <text x="560" y="205" text-anchor="middle" font-size="11.5" fill="#475569">π/lone-pair electrons delocalise</text>
+  <text x="560" y="223" text-anchor="middle" font-size="11.5" fill="#475569">over the whole system (long-range, strong).</text>
+
+  <!-- Hyperconjugation -->
+  <text x="930" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">Hyperconjugation (σ C–H → p)</text>
+  <text x="930" y="125" text-anchor="middle" font-size="15" fill="#334155">H–C — C⁺</text>
+  <path d="M895,135 Q940,165 985,135" fill="none" stroke="#d97706" stroke-width="1.6" stroke-dasharray="4 3" marker-end="url(#ee)"/>
+  <text x="930" y="195" text-anchor="middle" font-size="11.5" fill="#475569">α C–H electrons stabilise the</text>
+  <text x="930" y="213" text-anchor="middle" font-size="11.5" fill="#475569">adjacent empty p-orbital.</text>
+
+  <!-- priority bar -->
+  <rect x="120" y="268" width="880" height="56" rx="9" fill="#eef2ff" stroke="#c7d2fe"/>
+  <text x="560" y="291" text-anchor="middle" font-size="12.5" font-weight="700" fill="#3730a3">Priority when they compete:</text>
+  <text x="560" y="310" text-anchor="middle" font-size="12" fill="#3730a3">resonance &gt; inductive &gt; hyperconjugation &gt; s-character &gt; solvation</text>
+</svg>

@@ -15,7 +15,7 @@ Chapters are tagged **Physical / Organic / Inorganic**, since that is how JEE ch
 | 05 | [Thermodynamics (chemical)](./05-thermodynamics/) | Physical | ✅ built |
 | 06 | [Equilibrium (Chemical Equilibrium)](./06-chemical-equilibrium/) | Physical | ✅ built (chemical) |
 | 07 | Redox Reactions | Physical | ⬜ planned |
-| 08 | Organic Chemistry — Basic Principles (GOC) | Organic | ⬜ planned |
+| 08 | [Organic Chemistry — Basic Principles (GOC)](./08-organic-basic-principles/) | Organic | ✅ built |
 | 09 | Hydrocarbons | Organic | ⬜ planned |
 
 **Legend:** ✅ built · 🟨 in progress · ⬜ planned
@@ -70,6 +70,16 @@ formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" l
 > solubility product). That half is a separate planned topic and can live as `06-ionic-equilibrium/`.
 
 ---
+
+### 08 — Organic Chemistry: Basic Principles (GOC) ✅
+Covers **hybridisation & shapes, IUPAC nomenclature, isomerism, bond fission & reaction intermediates,
+electronic effects (inductive/resonance/hyperconjugation), reaction types, and stability/acid–base reasoning**.
+Concepts (10 sections: 7 core + a 3-section Advanced cluster — resonance & aromaticity (Hückel), carbocation
+stability & rearrangements, acidity/basicity from all effects together; LaTeX + 3 SVGs: concept map,
+electronic effects, isomerism) · 35 solved problems (10/15/10, reasoning + counting) · 35 practice problems
+(approach-hints + collapsible solutions) · deep-dive · formula recap · notes entry point (`notes/notes.md`)
+· "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`: the formula sheet
+(rendered PNG + vector PDF) and the full chapter notes PDF.
 
 > **Weightage note:** The mole concept is foundational — stoichiometry questions appear in JEE
 > Main & Advanced every year, and this chapter underpins almost all Physical and Inorganic numericals.

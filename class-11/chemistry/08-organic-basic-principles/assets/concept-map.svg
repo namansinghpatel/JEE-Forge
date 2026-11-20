@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 450" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="450" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">GOC — Concept Map</text>
+
+  <!-- root -->
+  <rect x="455" y="52" width="210" height="46" rx="10" fill="#0d9488" stroke="#0f766e"/>
+  <text x="560" y="74" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">Grammar of organic chemistry</text>
+  <text x="560" y="90" text-anchor="middle" font-size="11.5" fill="#ccfbf1">"what stabilises the key species?"</text>
+
+  <!-- connectors root -> 3 pillars -->
+  <path d="M560,98 L185,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M560,98 L560,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M560,98 L935,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 3 pillars -->
+  <rect x="60" y="152" width="250" height="52" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="185" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">Structure &amp; naming</text>
+  <text x="185" y="193" text-anchor="middle" font-size="11.5" fill="#1e40af">hybridisation · IUPAC · isomerism</text>
+
+  <rect x="435" y="152" width="250" height="52" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="560" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">Intermediates &amp; effects</text>
+  <text x="560" y="193" text-anchor="middle" font-size="11.5" fill="#15803d">fission · I · M · hyperconjugation</text>
+
+  <rect x="810" y="152" width="250" height="52" rx="10" fill="#fef3c7" stroke="#d97706"/>
+  <text x="935" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Stability &amp; reactivity</text>
+  <text x="935" y="193" text-anchor="middle" font-size="11.5" fill="#b45309">acidity · basicity · reactions</text>
+
+  <!-- connectors to detail -->
+  <path d="M185,204 L185,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M560,204 L560,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M935,204 L935,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- detail boxes -->
+  <rect x="60" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#2563eb"/>
+  <text x="185" y="274" text-anchor="middle" font-size="12" fill="#334155">sp³/sp²/sp · σ &amp; π bonds</text>
+  <text x="185" y="292" text-anchor="middle" font-size="12" fill="#334155">IUPAC: root + suffix + prefix</text>
+  <text x="185" y="312" text-anchor="middle" font-size="12" fill="#334155">chain/position/functional isomers</text>
+
+  <rect x="435" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#16a34a"/>
+  <text x="560" y="274" text-anchor="middle" font-size="12" fill="#334155">carbocation/carbanion/radical</text>
+  <text x="560" y="292" text-anchor="middle" font-size="12" fill="#334155">electrophile vs nucleophile</text>
+  <text x="560" y="312" text-anchor="middle" font-size="12" fill="#334155">inductive · resonance · hyper.</text>
+
+  <rect x="810" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#d97706"/>
+  <text x="935" y="274" text-anchor="middle" font-size="12" fill="#334155">carbocation 3°&gt;2°&gt;1°</text>
+  <text x="935" y="292" text-anchor="middle" font-size="12" fill="#334155">acid = conj-base stability</text>
+  <text x="935" y="312" text-anchor="middle" font-size="12" fill="#334155">base = lone-pair availability</text>
+
+  <!-- advanced band -->
+  <rect x="120" y="352" width="880" height="56" rx="9" fill="#f0fdfa" stroke="#99f6e4"/>
+  <text x="560" y="375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0f766e">Advanced:</text>
+  <text x="560" y="394" text-anchor="middle" font-size="12" fill="#0f766e">resonance &amp; aromaticity (Hückel 4n+2) · carbocation rearrangements (1,2-shifts) · acidity/basicity from all effects together</text>
+
+  <!-- footer -->
+  <text x="560" y="432" text-anchor="middle" font-size="11.5" fill="#64748b">Priority of effects: resonance &gt; inductive &gt; hyperconjugation &gt; s-character &gt; solvation</text>
+</svg>
