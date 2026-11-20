@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 450" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L6,3 L0,6 Z" fill="#94a3b8"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="450" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="34" text-anchor="middle" font-size="19" font-weight="700" fill="#0f172a">Complex Numbers — Concept Map</text>
+
+  <!-- root -->
+  <rect x="455" y="52" width="210" height="46" rx="10" fill="#0891b2" stroke="#0e7490"/>
+  <text x="560" y="74" text-anchor="middle" font-size="14.5" font-weight="700" fill="#ffffff">z = a + ib (i² = −1)</text>
+  <text x="560" y="90" text-anchor="middle" font-size="11.5" fill="#cffafe">a point on the Argand plane</text>
+
+  <!-- connectors root -> 3 pillars -->
+  <path d="M560,98 L185,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M560,98 L560,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <path d="M560,98 L935,150" fill="none" stroke="#94a3b8" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- 3 pillars -->
+  <rect x="60" y="152" width="250" height="52" rx="10" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="185" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#1d4ed8">Algebra &amp; modulus</text>
+  <text x="185" y="193" text-anchor="middle" font-size="11.5" fill="#1e40af">conjugate · |z| · z z̄ = |z|²</text>
+
+  <rect x="435" y="152" width="250" height="52" rx="10" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="560" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#166534">Polar &amp; De Moivre</text>
+  <text x="560" y="193" text-anchor="middle" font-size="11.5" fill="#15803d">r e^{iθ} · powers &amp; roots</text>
+
+  <rect x="810" y="152" width="250" height="52" rx="10" fill="#fef3c7" stroke="#d97706"/>
+  <text x="935" y="175" text-anchor="middle" font-size="14" font-weight="700" fill="#92400e">Roots of unity</text>
+  <text x="935" y="193" text-anchor="middle" font-size="11.5" fill="#b45309">1 + ω + ω² = 0</text>
+
+  <!-- connectors to detail -->
+  <path d="M185,204 L185,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M560,204 L560,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+  <path d="M935,204 L935,250" fill="none" stroke="#94a3b8" stroke-width="1.2" marker-end="url(#arrow)"/>
+
+  <!-- detail boxes -->
+  <rect x="60" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#2563eb"/>
+  <text x="185" y="274" text-anchor="middle" font-size="12" fill="#334155">÷ via conjugate</text>
+  <text x="185" y="292" text-anchor="middle" font-size="12" fill="#334155">compare real &amp; imag parts</text>
+  <text x="185" y="312" text-anchor="middle" font-size="12" fill="#334155">real iff z = z̄</text>
+
+  <rect x="435" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#16a34a"/>
+  <text x="560" y="274" text-anchor="middle" font-size="12" fill="#334155">multiply: |·| ×, arg +</text>
+  <text x="560" y="292" text-anchor="middle" font-size="12" fill="#334155">(cosθ+isinθ)ⁿ = cos nθ + i sin nθ</text>
+  <text x="560" y="312" text-anchor="middle" font-size="12" fill="#334155">watch the quadrant</text>
+
+  <rect x="810" y="252" width="250" height="78" rx="10" fill="#ffffff" stroke="#d97706"/>
+  <text x="935" y="274" text-anchor="middle" font-size="12" fill="#334155">ω³ = 1, reduce mod 3</text>
+  <text x="935" y="292" text-anchor="middle" font-size="12" fill="#334155">n-th roots sum to 0</text>
+  <text x="935" y="312" text-anchor="middle" font-size="12" fill="#334155">regular n-gon</text>
+
+  <!-- advanced band -->
+  <rect x="120" y="352" width="880" height="56" rx="9" fill="#ecfeff" stroke="#a5f3fc"/>
+  <text x="560" y="375" text-anchor="middle" font-size="12.5" font-weight="700" fill="#0e7490">Advanced:</text>
+  <text x="560" y="394" text-anchor="middle" font-size="12" fill="#0e7490">multiply by e^{iθ} = rotation · rotation formula for triangles/squares · loci (circle, bisector, ellipse) · triangle inequality</text>
+
+  <!-- footer -->
+  <text x="560" y="432" text-anchor="middle" font-size="11.5" fill="#64748b">Turn geometry into algebra: |...| = distance · arg(...) = angle · multiply by e^{iθ} = rotate</text>
+</svg>

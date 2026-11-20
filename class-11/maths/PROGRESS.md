@@ -7,7 +7,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 | # | Chapter | Status |
 |---|---|---|
 | 01 | [Sets, Relations & Functions](./01-sets-relations-functions/) | ✅ built |
-| 02 | [Complex Numbers & Quadratic Equations — *Quadratic Equations*](./02-quadratic-equations/) | ✅ built (quadratics) |
+| 02 | Complex Numbers & Quadratic Equations — [*Complex Numbers*](./02-complex-numbers/) + [*Quadratic Equations*](./02-quadratic-equations/) | ✅ built (both halves) |
 | 03 | Sequences & Series | ⬜ planned |
 | 04 | Permutations & Combinations | ⬜ planned |
 | 05 | Binomial Theorem | ⬜ planned |
@@ -20,8 +20,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 **Legend:** ✅ built · 🟨 in progress · ⬜ planned
 
 > **Note:** Chapter 02 in the JEE syllabus pairs Complex Numbers with Quadratic Equations.
-> The *Quadratic Equations* half is built; the *Complex Numbers* half is a separate planned topic
-> and can live as `02-complex-numbers/` alongside it.
+> Both halves are now built as sibling folders: `02-complex-numbers/` and `02-quadratic-equations/`.
 
 ---
 
@@ -35,6 +34,15 @@ diagrams, function mapping) · 35 solved numericals (10/15/10, with strategy ste
 (approach-hints + collapsible solutions) · deep-dive · formula recap · notes entry point (`notes/notes.md`)
 · "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`: the formula sheet
 (rendered PNG + vector PDF).
+
+### 02 — Complex Numbers ✅
+Covers **the imaginary unit & algebra, conjugate/modulus, Argand plane & polar form, De Moivre's theorem,
+cube & nth roots of unity, and the geometry of complex numbers**. Concepts (10 sections: 7 core + a
+3-section Advanced cluster — nth roots of unity, rotation & loci, modulus–argument identities & the triangle
+inequality; LaTeX + 2 SVGs: concept map, Argand plane) · 35 solved numericals (10/15/10, with strategy
+steps) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive · formula recap · notes
+entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in
+`notes/scans/`: the formula sheet (rendered PNG + vector PDF, shared with quadratics).
 
 ### 02 — Quadratic Equations ✅
 Concepts (8 sections, LaTeX + 3 SVGs: concept map, discriminant cases, parabola) ·

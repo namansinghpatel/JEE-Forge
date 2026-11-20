@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ag" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">The Argand Plane — modulus and argument</text>
+
+  <!-- axes -->
+  <line x1="120" y1="300" x2="600" y2="300" stroke="#334155" stroke-width="1.6" marker-end="url(#ag)"/>
+  <line x1="300" y1="330" x2="300" y2="70" stroke="#334155" stroke-width="1.6" marker-end="url(#ag)"/>
+  <text x="600" y="320" font-size="12" fill="#334155">Re (a)</text>
+  <text x="310" y="78" font-size="12" fill="#334155">Im (b)</text>
+
+  <!-- point z -->
+  <circle cx="480" cy="150" r="5" fill="#0891b2"/>
+  <text x="492" y="145" font-size="13" fill="#0e7490" font-weight="700">z = a + ib</text>
+  <!-- vector -->
+  <line x1="300" y1="300" x2="480" y2="150" stroke="#0891b2" stroke-width="2.5" marker-end="url(#ag)"/>
+  <!-- projections -->
+  <line x1="480" y1="150" x2="480" y2="300" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <line x1="480" y1="150" x2="300" y2="150" stroke="#94a3b8" stroke-width="1.2" stroke-dasharray="4 3"/>
+  <text x="485" y="315" font-size="11.5" fill="#475569">a</text>
+  <text x="270" y="155" font-size="11.5" fill="#475569">b</text>
+  <!-- r label -->
+  <text x="370" y="215" font-size="12.5" fill="#0e7490" font-weight="700">r = |z|</text>
+  <!-- angle -->
+  <path d="M335,300 A35,35 0 0,1 326,272" fill="none" stroke="#d97706" stroke-width="1.6"/>
+  <text x="345" y="288" font-size="12" fill="#b45309">θ = arg z</text>
+
+  <!-- formulas box -->
+  <rect x="680" y="90" width="380" height="180" rx="9" fill="#ffffff" stroke="#cbd5e1"/>
+  <text x="870" y="118" text-anchor="middle" font-size="13" font-weight="700" fill="#334155">Modulus–argument form</text>
+  <text x="870" y="150" text-anchor="middle" font-size="13" fill="#334155">r = √(a² + b²)</text>
+  <text x="870" y="178" text-anchor="middle" font-size="13" fill="#334155">θ = tan⁻¹(b / a)  (by quadrant)</text>
+  <text x="870" y="206" text-anchor="middle" font-size="13" fill="#334155">z = r(cos θ + i sin θ) = r e^{iθ}</text>
+  <text x="870" y="238" text-anchor="middle" font-size="12" fill="#475569">multiply → moduli ×, arguments +</text>
+
+  <text x="560" y="345" text-anchor="middle" font-size="11.5" fill="#64748b">Always sketch the point first to fix the quadrant of the argument.</text>
+</svg>
