@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" font-family="Segoe UI, Arial, sans-serif">
+  <rect x="0" y="0" width="1120" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Energy conservation — KE and PE trade off</text>
+
+  <!-- Left: pendulum / drop energy bars at three points -->
+  <text x="300" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#16a34a">A ball falling (total energy constant)</text>
+  <!-- baseline -->
+  <line x1="90" y1="300" x2="520" y2="300" stroke="#64748b" stroke-width="2"/>
+  <!-- three stations: top, middle, bottom -->
+  <!-- top: all PE -->
+  <text x="150" y="325" text-anchor="middle" font-size="11" fill="#475569">top</text>
+  <rect x="120" y="110" width="60" height="150" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="150" y="135" text-anchor="middle" font-size="11" fill="#166534">PE</text>
+  <rect x="120" y="260" width="60" height="0" fill="#dbeafe" stroke="#2563eb"/>
+  <!-- middle: half PE half KE -->
+  <text x="290" y="325" text-anchor="middle" font-size="11" fill="#475569">middle</text>
+  <rect x="260" y="185" width="60" height="75" fill="#dcfce7" stroke="#16a34a"/>
+  <text x="290" y="210" text-anchor="middle" font-size="11" fill="#166534">PE</text>
+  <rect x="260" y="110" width="60" height="75" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="290" y="152" text-anchor="middle" font-size="11" fill="#1e40af">KE</text>
+  <!-- bottom: all KE -->
+  <text x="430" y="325" text-anchor="middle" font-size="11" fill="#475569">bottom</text>
+  <rect x="400" y="110" width="60" height="150" fill="#dbeafe" stroke="#2563eb"/>
+  <text x="430" y="190" text-anchor="middle" font-size="11" fill="#1e40af">KE</text>
+  <!-- total line -->
+  <line x1="110" y1="110" x2="470" y2="110" stroke="#dc2626" stroke-width="1.5" stroke-dasharray="5 3"/>
+  <text x="488" y="113" font-size="10.5" fill="#dc2626">E total</text>
+  <text x="300" y="348" text-anchor="middle" font-size="11" fill="#475569">mgh converts to ½mv² — the bars swap but the sum is fixed</text>
+
+  <!-- Right: spring force/PE -->
+  <text x="830" y="64" text-anchor="middle" font-size="13" font-weight="700" fill="#2563eb">Spring: F = −kx, U = ½kx²</text>
+  <!-- axes -->
+  <line x1="640" y1="300" x2="1030" y2="300" stroke="#334155" stroke-width="1.6"/>
+  <line x1="835" y1="300" x2="835" y2="90" stroke="#334155" stroke-width="1.6"/>
+  <text x="1030" y="318" font-size="11.5" fill="#334155">x</text>
+  <!-- parabola U = kx^2 -->
+  <path d="M 660 110 Q 835 350 1010 110" fill="none" stroke="#16a34a" stroke-width="2.5"/>
+  <text x="980" y="130" font-size="11.5" fill="#166534">U = ½kx²</text>
+  <!-- linear force F=-kx -->
+  <line x1="680" y1="200" x2="990" y2="400" stroke="#2563eb" stroke-width="2" stroke-dasharray="4 3" clip-path="none"/>
+  <line x1="690" y1="230" x2="980" y2="370" stroke="#2563eb" stroke-width="2"/>
+  <text x="700" y="250" font-size="11.5" fill="#2563eb">F = −kx</text>
+  <text x="835" y="332" text-anchor="middle" font-size="11" fill="#475569">restoring force grows with displacement; stored energy grows as x²</text>
+</svg>

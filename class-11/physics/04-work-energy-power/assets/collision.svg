@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 360" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="cv" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#334155"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="360" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Collisions — momentum always conserved</text>
+
+  <!-- Elastic -->
+  <text x="190" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#16a34a">Elastic (e = 1)</text>
+  <text x="190" y="84" text-anchor="middle" font-size="11" fill="#475569">momentum ✓ · KE ✓</text>
+  <!-- before -->
+  <text x="70" y="120" font-size="10.5" fill="#64748b">before</text>
+  <circle cx="110" cy="150" r="16" fill="#dbeafe" stroke="#2563eb"/>
+  <line x1="130" y1="150" x2="170" y2="150" stroke="#2563eb" stroke-width="2" marker-end="url(#cv)"/>
+  <circle cx="230" cy="150" r="16" fill="#e2e8f0" stroke="#64748b"/>
+  <!-- after -->
+  <text x="70" y="210" font-size="10.5" fill="#64748b">after</text>
+  <circle cx="110" cy="240" r="16" fill="#dbeafe" stroke="#2563eb"/>
+  <circle cx="250" cy="240" r="16" fill="#e2e8f0" stroke="#64748b"/>
+  <line x1="270" y1="240" x2="315" y2="240" stroke="#64748b" stroke-width="2" marker-end="url(#cv)"/>
+  <text x="190" y="300" text-anchor="middle" font-size="10.5" fill="#475569">equal masses → exchange velocities</text>
+
+  <!-- Inelastic -->
+  <text x="560" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#d97706">Inelastic</text>
+  <text x="560" y="84" text-anchor="middle" font-size="11" fill="#475569">momentum ✓ · KE partly lost</text>
+  <text x="440" y="120" font-size="10.5" fill="#64748b">before</text>
+  <circle cx="480" cy="150" r="16" fill="#fef3c7" stroke="#d97706"/>
+  <line x1="500" y1="150" x2="540" y2="150" stroke="#d97706" stroke-width="2" marker-end="url(#cv)"/>
+  <circle cx="600" cy="150" r="16" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="440" y="210" font-size="10.5" fill="#64748b">after</text>
+  <circle cx="520" cy="240" r="16" fill="#fef3c7" stroke="#d97706"/>
+  <line x1="540" y1="240" x2="572" y2="240" stroke="#334155" stroke-width="2" marker-end="url(#cv)"/>
+  <circle cx="620" cy="240" r="16" fill="#e2e8f0" stroke="#64748b"/>
+  <line x1="640" y1="240" x2="680" y2="240" stroke="#334155" stroke-width="2" marker-end="url(#cv)"/>
+  <text x="560" y="300" text-anchor="middle" font-size="10.5" fill="#475569">both move on, some KE → heat</text>
+
+  <!-- Perfectly inelastic -->
+  <text x="930" y="66" text-anchor="middle" font-size="13" font-weight="700" fill="#be123c">Perfectly inelastic (e = 0)</text>
+  <text x="930" y="84" text-anchor="middle" font-size="11" fill="#475569">momentum ✓ · max KE loss</text>
+  <text x="810" y="120" font-size="10.5" fill="#64748b">before</text>
+  <circle cx="850" cy="150" r="16" fill="#fde2e7" stroke="#be123c"/>
+  <line x1="870" y1="150" x2="905" y2="150" stroke="#be123c" stroke-width="2" marker-end="url(#cv)"/>
+  <circle cx="965" cy="150" r="16" fill="#e2e8f0" stroke="#64748b"/>
+  <text x="810" y="210" font-size="10.5" fill="#64748b">after</text>
+  <circle cx="905" cy="240" r="16" fill="#fde2e7" stroke="#be123c"/>
+  <circle cx="937" cy="240" r="16" fill="#e2e8f0" stroke="#64748b"/>
+  <line x1="958" y1="240" x2="995" y2="240" stroke="#334155" stroke-width="2" marker-end="url(#cv)"/>
+  <text x="930" y="300" text-anchor="middle" font-size="10.5" fill="#475569">stick together, move as one</text>
+
+  <text x="560" y="338" text-anchor="middle" font-size="11" fill="#475569">Always start with momentum conservation; add the restitution/KE condition as the second equation.</text>
+</svg>

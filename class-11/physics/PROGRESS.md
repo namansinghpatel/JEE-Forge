@@ -9,7 +9,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 | 01 | Units & Measurements | ⬜ planned |
 | 02 | [Kinematics](./02-kinematics/) | ✅ built |
 | 03 | [Laws of Motion](./03-laws-of-motion/) | ✅ built |
-| 04 | Work, Energy & Power | 🟨 in progress |
+| 04 | [Work, Energy & Power](./04-work-energy-power/) | ✅ built |
 | 05 | [System of Particles & Rotational Motion](./05-rotational-motion/) | ✅ built |
 | 06 | Gravitation | ⬜ planned |
 | 07 | Mechanical Properties of Solids | ⬜ planned |
@@ -43,6 +43,15 @@ steps) · 35 practice problems (approach-hints + collapsible solutions) · deep-
 notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in
 `notes/scans/`: NLM 60-point master sheet, "30 connected cases" FBD reference, circular-motion sheet, and
 the full chapter notes PDF.
+
+### 04 — Work, Energy & Power ✅
+Covers **work & the work–energy theorem, potential energy, conservation of energy, power, and collisions**.
+Concepts (10 sections: 7 core + a 3-section Advanced cluster — variable force & $F=-dU/dx$, energy method
+for springs/vertical circles, 2D & CM-frame collisions; LaTeX + 3 SVGs: concept map, energy bars/spring,
+collision types) · 35 solved numericals (10/15/10, with strategy steps) · 35 practice problems
+(approach-hints + collapsible solutions) · deep-dive · formula recap · notes entry point
+(`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`:
+WEP 50-point master sheet, collisions formula sheet, and the full chapter notes PDF.
 
 ### 05 — Rotational Motion ✅
 Concepts (9 sections, LaTeX + Mermaid + 6 SVGs) · 35 solved numericals (10/15/10, with strategy steps) ·
