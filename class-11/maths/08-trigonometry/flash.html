@@ -1,0 +1,97 @@
+
+<meta name="claude:viewport-fit-sides" content="cover">
+<title>Trigonometry Flash</title>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+  :root{
+    --bg:#f6f7fb; --surface:#ffffff; --fg:#141a2a; --muted:#5b6478; --border:#e6e8f0;
+    --title-bg:#881337; --title-fg:#ffffff; --chip:#eef1f7;
+    --blue:#2563eb;--blue-bg:#eaf1ff; --green:#15803d;--green-bg:#e9f8ef;
+    --amber:#b45309;--amber-bg:#fdf3e3; --rose:#be123c;--rose-bg:#fdeaef;
+    --violet:#6d28d9;--violet-bg:#f1ebfe; --teal:#0e7490;--teal-bg:#e6f6fa;
+    color-scheme:light;
+  }
+  @media (prefers-color-scheme:dark){ :root:not([data-theme="light"]){
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#4c0519;--title-fg:#ffe4ec;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }}
+  :root[data-theme="dark"]{
+    --bg:#0c1016;--surface:#141a24;--fg:#eef2f8;--muted:#9aa6b8;--border:#283140;
+    --title-bg:#4c0519;--title-fg:#ffe4ec;--chip:#1b2230;
+    --blue:#7fa8ff;--blue-bg:#15213a; --green:#74d99a;--green-bg:#122a1d;
+    --amber:#f0b968;--amber-bg:#2c2110; --rose:#f4869f;--rose-bg:#2c1420;
+    --violet:#c3a8f5;--violet-bg:#1f1733; --teal:#6fd0e6;--teal-bg:#10262d;
+    color-scheme:dark;
+  }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--fg);font-family:"DM Sans",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.4;}
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:22px;max-width:1180px;margin:0 auto;}
+  .mast{background:var(--title-bg);color:var(--title-fg);border-radius:16px;padding:18px 22px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;box-shadow:0 6px 24px rgba(10,20,45,.18);}
+  .mast h1{font-family:"Fraunces",Georgia,serif;font-weight:700;margin:0;font-size:clamp(22px,4.6vw,34px);letter-spacing:.3px;text-wrap:balance;}
+  .mast .sub{opacity:.82;font-size:13px;margin-top:2px;}
+  .mast .badge{background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.22);padding:6px 12px;border-radius:999px;font-size:12px;font-weight:700;letter-spacing:.4px;white-space:nowrap;}
+  .band{display:flex;align-items:center;gap:10px;margin:26px 2px 12px;}
+  .band .dot{width:12px;height:12px;border-radius:50%;}
+  .band h2{font-family:"Fraunces",Georgia,serif;font-size:16px;margin:0;letter-spacing:.3px;text-transform:uppercase;}
+  .band .line{flex:1;height:1px;background:var(--border);}
+  .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:14px;}
+  .card{background:var(--surface);border:1px solid var(--border);border-left-width:5px;border-radius:13px;padding:13px 15px 14px;min-width:0;display:flex;flex-direction:column;gap:8px;box-shadow:0 1px 2px rgba(10,20,45,.04);}
+  .card h3{margin:0;font-size:15px;font-weight:700;display:flex;align-items:baseline;gap:8px;}
+  .card h3 .n{font-family:"Fraunces",Georgia,serif;font-weight:700;font-size:13px;width:22px;height:22px;flex:none;border-radius:7px;display:inline-grid;place-items:center;color:#fff;}
+  .math{font-size:15px;overflow-x:auto;padding:2px 0;}
+  .grab{font-size:12.5px;color:var(--muted);}
+  .grab b{color:var(--fg);font-weight:700;}
+  .c-blue{border-left-color:var(--blue);background:color-mix(in srgb,var(--blue-bg) 70%,var(--surface));} .c-blue h3 .n{background:var(--blue);} .c-blue h3{color:var(--blue);}
+  .c-green{border-left-color:var(--green);background:color-mix(in srgb,var(--green-bg) 70%,var(--surface));} .c-green h3 .n{background:var(--green);} .c-green h3{color:var(--green);}
+  .c-amber{border-left-color:var(--amber);background:color-mix(in srgb,var(--amber-bg) 70%,var(--surface));} .c-amber h3 .n{background:var(--amber);} .c-amber h3{color:var(--amber);}
+  .c-rose{border-left-color:var(--rose);background:color-mix(in srgb,var(--rose-bg) 70%,var(--surface));} .c-rose h3 .n{background:var(--rose);} .c-rose h3{color:var(--rose);}
+  .c-violet{border-left-color:var(--violet);background:color-mix(in srgb,var(--violet-bg) 70%,var(--surface));} .c-violet h3 .n{background:var(--violet);} .c-violet h3{color:var(--violet);}
+  .foot{margin-top:24px;text-align:center;color:var(--muted);font-size:12px;}
+  mjx-container{color:var(--fg);} mjx-container svg{max-width:100%;}
+</style>
+<div class="wrap">
+<div class="mast"><div><h1>Trigonometry Flash</h1><div class="sub">Class 11 Maths · identities · compound · multiple · sum↔product · general solutions</div></div><span class="badge">JEE MAIN · ADVANCED</span></div>
+
+<div class="band"><span class="dot" style="background:var(--blue)"></span><h2>Fundamentals</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-blue"><h3><span class="n">1</span>Pythagorean</h3><div class="math">\(\sin^2\theta+\cos^2\theta=1\)</div></div>
+<div class="card c-blue"><h3><span class="n">2</span>Cousins</h3><div class="math">\(1+\tan^2=\sec^2,\ 1+\cot^2=\csc^2\)</div></div>
+<div class="card c-blue"><h3><span class="n">3</span>Signs (ASTC)</h3><div class="grab">Q1 all+ · Q2 sin+ · Q3 tan+ · Q4 cos+.</div></div>
+<div class="card c-blue"><h3><span class="n">4</span>Ranges &amp; periods</h3><div class="grab">sin,cos ∈[−1,1], period 2π; tan period π.</div></div>
+</div>
+
+<div class="band"><span class="dot" style="background:var(--green)"></span><h2>Compound Angles</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-green"><h3><span class="n">5</span>sin(A±B)</h3><div class="math">\(\sin A\cos B\pm\cos A\sin B\)</div></div>
+<div class="card c-green"><h3><span class="n">6</span>cos(A±B)</h3><div class="math">\(\cos A\cos B\mp\sin A\sin B\)</div></div>
+<div class="card c-green"><h3><span class="n">7</span>tan(A±B)</h3><div class="math">\(\tfrac{\tan A\pm\tan B}{1\mp\tan A\tan B}\)</div></div>
+<div class="card c-green"><h3><span class="n">8</span>Use</h3><div class="grab">non-standard angles: sin75°=sin(45°+30°).</div></div>
+</div>
+
+<div class="band"><span class="dot" style="background:var(--amber)"></span><h2>Multiple &amp; Sum↔Product</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-amber"><h3><span class="n">9</span>Double angle</h3><div class="math">\(\sin2A=2\sin A\cos A\)</div></div>
+<div class="card c-amber"><h3><span class="n">10</span>cos 2A</h3><div class="math">\(1-2\sin^2A=2\cos^2A-1\)</div></div>
+<div class="card c-amber"><h3><span class="n">11</span>Triple</h3><div class="math">\(\cos3A=4\cos^3A-3\cos A\)</div></div>
+<div class="card c-amber"><h3><span class="n">12</span>Sum→product</h3><div class="math">\(\sin C+\sin D=2\sin\tfrac{C+D}2\cos\tfrac{C-D}2\)</div></div>
+</div>
+
+<div class="band"><span class="dot" style="background:var(--violet)"></span><h2>Equations &amp; Range</h2><span class="line"></span></div>
+<div class="grid">
+<div class="card c-violet"><h3><span class="n">13</span>General: sin</h3><div class="math">\(\theta=n\pi+(-1)^n\alpha\)</div></div>
+<div class="card c-violet"><h3><span class="n">14</span>General: cos</h3><div class="math">\(\theta=2n\pi\pm\alpha\)</div></div>
+<div class="card c-violet"><h3><span class="n">15</span>General: tan</h3><div class="math">\(\theta=n\pi+\alpha\)</div></div>
+<div class="card c-violet"><h3><span class="n">16</span>R-form range</h3><div class="math">\(a\cos\theta+b\sin\theta\in[-R,R]\)</div><div class="grab">R=√(a²+b²).</div></div>
+</div>
+
+<div class="foot">JEE-Forge · Trigonometry flash sheet · companion to the full 08-trigonometry notes</div>
+</div>
+<script>
+  window.MathJax={tex:{inlineMath:[["\\(","\\)"]],displayMath:[["\\[","\\]"]]},svg:{fontCache:"global"},startup:{typeset:true}};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-svg.js" id="MathJax-script"></script>

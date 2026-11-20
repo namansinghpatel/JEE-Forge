@@ -13,7 +13,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 | 05 | Binomial Theorem | ⬜ planned |
 | 06 | [Straight Lines](./06-straight-lines/) | ✅ built |
 | 07 | [Conic Sections](./07-conic-sections/) | ✅ built |
-| 08 | Trigonometry | ⬜ planned |
+| 08 | [Trigonometry](./08-trigonometry/) | ✅ built |
 | 09 | Limits (introduction) | ⬜ planned |
 | 10 | Statistics & Probability (basics) | ⬜ planned |
 
@@ -69,6 +69,17 @@ bisector sign rule, pair of lines, translation of axes, triangle centres & Euler
 recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in
 `notes/scans/`: the formula sheet (rendered PNG + vector PDF). _No scanned notes PDF — Maths Notes folders are
 empty for Class 11._
+
+### 08 — Trigonometric Functions ✅
+Covers **angles & radians, the six ratios & ASTC, Pythagorean identities, allied angles & periodicity,
+compound-angle formulae, multiple/sub-multiple angles, and sum↔product**. Concepts (10 sections: 7 core + a
+3-section Advanced cluster — general solutions of trig equations, the $R$-form range of $a\cos\theta+b\sin\theta$
+& conditional identities, inverse-ratio awareness & the sine/cosine laws; LaTeX + 1 SVG concept map) · 35 solved
+numericals (10/15/10, with strategy steps) · 35 practice problems (approach-hints + collapsible solutions) ·
+deep-dive (identity-proving discipline, R-form, equation pipeline, Weierstrass t-sub, conditional identities,
+trig series, power-reduction for integration) · formula recap · notes entry point (`notes/notes.md`) · "JEE
+Questions by Me" log. Google Drive source material filed in `notes/scans/`: the formula sheet (rendered PNG +
+vector PDF). _No scanned notes PDF — Maths Notes folders are empty for Class 11._
 
 ### 07 — Conic Sections ✅
 Concepts (7 sections covering all four conics — circle, parabola, ellipse, hyperbola —

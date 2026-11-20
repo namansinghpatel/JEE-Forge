@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="tr" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="440" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Trigonometric Functions — concept map</text>
+
+  <!-- central node -->
+  <rect x="455" y="58" width="210" height="50" rx="10" fill="#1e293b"/>
+  <text x="560" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Unit circle (cos θ, sin θ)</text>
+  <text x="560" y="98" text-anchor="middle" font-size="11.5" fill="#cbd5e1">sin²θ + cos²θ = 1 · ASTC</text>
+
+  <!-- Ratios -->
+  <rect x="70" y="150" width="210" height="96" rx="10" fill="#eaf1ff" stroke="#2563eb"/>
+  <text x="175" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1d4ed8">Ratios &amp; identities</text>
+  <text x="175" y="195" text-anchor="middle" font-size="12" fill="#334155">6 ratios, signs by ASTC</text>
+  <text x="175" y="214" text-anchor="middle" font-size="11.5" fill="#334155">1+tan²=sec², 1+cot²=csc²</text>
+  <text x="175" y="233" text-anchor="middle" font-size="11" fill="#64748b">sin,cos bounded [−1,1]</text>
+  <line x1="480" y1="100" x2="235" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#tr)"/>
+
+  <!-- Allied -->
+  <rect x="320" y="150" width="210" height="96" rx="10" fill="#e9f8ef" stroke="#15803d"/>
+  <text x="425" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#15803d">Allied &amp; periodic</text>
+  <text x="425" y="195" text-anchor="middle" font-size="11.5" fill="#334155">90°/270°: function flips</text>
+  <text x="425" y="213" text-anchor="middle" font-size="11.5" fill="#334155">180°/360°: stays same</text>
+  <text x="425" y="232" text-anchor="middle" font-size="11" fill="#64748b">period 2π (tan: π)</text>
+  <line x1="520" y1="108" x2="455" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#tr)"/>
+
+  <!-- Compound -->
+  <rect x="590" y="150" width="210" height="96" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="695" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">Compound angles</text>
+  <text x="695" y="195" text-anchor="middle" font-size="11.5" fill="#334155">sin(A±B), cos(A±B)</text>
+  <text x="695" y="213" text-anchor="middle" font-size="11.5" fill="#334155">tan(A±B)</text>
+  <text x="695" y="232" text-anchor="middle" font-size="11" fill="#64748b">parent of all below</text>
+  <line x1="600" y1="108" x2="665" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#tr)"/>
+
+  <!-- Multiple / sum-product -->
+  <rect x="840" y="150" width="210" height="96" rx="10" fill="#fdeaef" stroke="#be123c"/>
+  <text x="945" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#be123c">Multiple &amp; sum↔prod</text>
+  <text x="945" y="195" text-anchor="middle" font-size="11.5" fill="#334155">2A, 3A, half-angle</text>
+  <text x="945" y="213" text-anchor="middle" font-size="11.5" fill="#334155">sinC±sinD → product</text>
+  <text x="945" y="232" text-anchor="middle" font-size="11" fill="#64748b">factor &amp; linearise</text>
+  <line x1="640" y1="100" x2="890" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#tr)"/>
+
+  <!-- Advanced band -->
+  <text x="560" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6d28d9">ADVANCED — reduce to a standard form, then apply the tool</text>
+
+  <rect x="150" y="310" width="250" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="275" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">General solutions</text>
+  <text x="275" y="355" text-anchor="middle" font-size="11.5" fill="#334155">sinθ=sinα ⇒ nπ+(−1)ⁿα</text>
+  <text x="275" y="374" text-anchor="middle" font-size="11.5" fill="#334155">cosθ=cosα ⇒ 2nπ±α</text>
+
+  <rect x="435" y="310" width="250" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="560" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">R-form</text>
+  <text x="560" y="355" text-anchor="middle" font-size="11.5" fill="#334155">a cosθ + b sinθ = R cos(θ−φ)</text>
+  <text x="560" y="374" text-anchor="middle" font-size="11.5" fill="#334155">range [−√(a²+b²), √(a²+b²)]</text>
+
+  <rect x="720" y="310" width="250" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="845" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Conditional &amp; t-sub</text>
+  <text x="845" y="355" text-anchor="middle" font-size="11.5" fill="#334155">A+B+C=π identities</text>
+  <text x="845" y="374" text-anchor="middle" font-size="11.5" fill="#334155">t = tan(θ/2) → algebraic</text>
+
+  <text x="560" y="422" text-anchor="middle" font-size="11.5" fill="#64748b">Identities simplify; compound angles generate everything; general solutions &amp; R-form handle equations and ranges.</text>
+</svg>
