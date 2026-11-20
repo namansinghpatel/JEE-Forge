@@ -6,7 +6,7 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 
 | # | Chapter | Status |
 |---|---|---|
-| 01 | Sets, Relations & Functions | ⬜ planned |
+| 01 | [Sets, Relations & Functions](./01-sets-relations-functions/) | ✅ built |
 | 02 | [Complex Numbers & Quadratic Equations — *Quadratic Equations*](./02-quadratic-equations/) | ✅ built (quadratics) |
 | 03 | Sequences & Series | ⬜ planned |
 | 04 | Permutations & Combinations | ⬜ planned |
@@ -27,6 +27,15 @@ by copying [`/templates/TOPIC_TEMPLATE/`](../../templates/TOPIC_TEMPLATE/).
 
 ## Built-chapter detail
 
+### 01 — Sets, Relations & Functions ✅
+Covers **sets & operations, inclusion–exclusion, relations & equivalence, functions, domain/range, and
+composition/inverse**. Concepts (10 sections: 7 core + a 3-section Advanced cluster — composition & inverse,
+domain/range & even/odd/periodic, equivalence relations & counting; LaTeX + 3 SVGs: concept map, Venn
+diagrams, function mapping) · 35 solved numericals (10/15/10, with strategy steps) · 35 practice problems
+(approach-hints + collapsible solutions) · deep-dive · formula recap · notes entry point (`notes/notes.md`)
+· "JEE Questions by Me" log. Google Drive source material filed in `notes/scans/`: the formula sheet
+(rendered PNG + vector PDF).
+
 ### 02 — Quadratic Equations ✅
 Concepts (8 sections, LaTeX + 3 SVGs: concept map, discriminant cases, parabola) ·
 35 solved numericals (10/15/10, with strategy steps) · 35 practice problems
@@ -44,7 +53,7 @@ director circle, completing the square) · formula recap · notes entry point (`
 
 ---
 
-> **Weightage note:** Quadratics are tested directly and, more importantly, as a *tool* inside
-> calculus, coordinate geometry and trigonometry — the discriminant and Vieta's relations recur
-> throughout JEE Main & Advanced. Conic sections are among the highest-yield coordinate-geometry
-> chapters: the parabola, ellipse and hyperbola each appear in JEE Main and Advanced almost every year.
+> **Weightage note:** Sets, relations and functions are the *language* of every later chapter — domains in
+> calculus, mappings in algebra, equivalence in number theory — and function type / domain–range questions
+> appear in JEE Main every year. Quadratics are tested directly and as a *tool* inside calculus, coordinate
+> geometry and trigonometry. Conic sections are among the highest-yield coordinate-geometry chapters.
