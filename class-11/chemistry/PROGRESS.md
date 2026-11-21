@@ -11,7 +11,7 @@ Chapters are tagged **Physical / Organic / Inorganic**, since that is how JEE ch
 | 01 | [Some Basic Concepts (Mole Concept)](./01-mole-concept/) | Physical | ✅ built |
 | 02 | [Structure of Atom](./02-structure-of-atom/) | Physical | ✅ built |
 | 03 | [Classification of Elements & Periodicity](./03-classification-periodicity/) | Inorganic | ✅ built |
-| 04 | Chemical Bonding & Molecular Structure | Inorganic | ⬜ planned |
+| 04 | [Chemical Bonding & Molecular Structure](./04-chemical-bonding/) | Inorganic | ✅ built |
 | 05 | [Thermodynamics (chemical)](./05-thermodynamics/) | Physical | ✅ built |
 | 06 | [Equilibrium (Chemical Equilibrium)](./06-chemical-equilibrium/) | Physical | ✅ built (chemical) |
 | 07 | Redox Reactions | Physical | ⬜ planned |
@@ -48,6 +48,18 @@ map) · 35 solved problems (10/15/10, reasoning + a few numericals: Z_eff, posit
 successive-IE group assignment) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive
 · formula recap · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source
 material filed in `notes/scans/`: the formula sheet (rendered PNG + vector PDF) and the full chapter notes PDF.
+
+### 04 — Chemical Bonding & Molecular Structure ✅
+Covers **the octet rule & its exceptions, ionic bonding & lattice enthalpy, covalent bonding / Lewis structures
+/ formal charge, bond parameters, VSEPR shapes, valence-bond theory & hybridisation, and molecular orbital
+theory**. Concepts (10 sections: 7 core + a 3-section Advanced cluster — resonance & the best contributor,
+dipole moment / % ionic character / Fajans' rules, hydrogen bonding; LaTeX + 1 SVG concept map) · 35 solved
+problems (10/15/10: formal charge, VSEPR shape, hybridisation, MOT bond order & magnetism, dipole vectors,
+Fajans, H-bonding) · 35 practice problems (approach-hints + collapsible solutions) · deep-dive (Lewis +
+formal-charge procedure, VSEPR steric-number method & lone-pair placement, hybridisation shortcut, MOT filling
+& the σ/π ordering switch, polarity from shape, VBT-vs-MOT-vs-VSEPR, Fajans) · formula recap (VSEPR & hybridisation
+tables) · notes entry point (`notes/notes.md`) · "JEE Questions by Me" log. Google Drive source material filed in
+`notes/scans/`: the concept/formula sheet (rendered PNG + vector PDF) and the full chapter notes PDF (~26 MB).
 
 ### 05 — Thermodynamics ✅
 Covers **the first law, enthalpy, thermochemistry (Hess, formation, bond enthalpy), entropy, and Gibbs
@@ -86,3 +98,5 @@ electronic effects, isomerism) · 35 solved problems (10/15/10, reasoning + coun
 > Structure of Atom is equally high-yield: Bohr/de Broglie/photoelectric numericals and quantum-number
 > questions appear annually and underpin the periodic table, bonding and coordination chemistry.
 > Chemical equilibrium underpins ionic equilibrium, electrochemistry and thermodynamics.
+> Chemical bonding (VSEPR, hybridisation, MOT, dipole moment, hydrogen bonding) is among the highest-yield
+> Inorganic chapters and is the backbone of all later organic and coordination chemistry.

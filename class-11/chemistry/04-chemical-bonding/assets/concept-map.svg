@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1120 440" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="cb" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L7,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1120" height="440" rx="12" fill="#f8fafc" stroke="#cbd5e1"/>
+  <text x="560" y="32" text-anchor="middle" font-size="18" font-weight="700" fill="#0f172a">Chemical Bonding &amp; Molecular Structure — concept map</text>
+
+  <!-- central node -->
+  <rect x="455" y="58" width="210" height="50" rx="10" fill="#7c2d12"/>
+  <text x="560" y="80" text-anchor="middle" font-size="14" font-weight="700" fill="#fff">Atoms bond → octet</text>
+  <text x="560" y="98" text-anchor="middle" font-size="11.5" fill="#f5d9c8">lower energy, stable config</text>
+
+  <!-- Ionic -->
+  <rect x="70" y="150" width="210" height="96" rx="10" fill="#eaf1ff" stroke="#2563eb"/>
+  <text x="175" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#1d4ed8">Ionic bond</text>
+  <text x="175" y="195" text-anchor="middle" font-size="12" fill="#334155">electron transfer</text>
+  <text x="175" y="214" text-anchor="middle" font-size="11.5" fill="#334155">lattice ∝ q₁q₂/r</text>
+  <text x="175" y="233" text-anchor="middle" font-size="11" fill="#64748b">metal + non-metal</text>
+  <line x1="480" y1="100" x2="235" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#cb)"/>
+
+  <!-- Covalent -->
+  <rect x="320" y="150" width="210" height="96" rx="10" fill="#e9f8ef" stroke="#15803d"/>
+  <text x="425" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#15803d">Covalent / Lewis</text>
+  <text x="425" y="195" text-anchor="middle" font-size="12" fill="#334155">shared pairs</text>
+  <text x="425" y="214" text-anchor="middle" font-size="11.5" fill="#334155">FC = V − L − ½B</text>
+  <text x="425" y="233" text-anchor="middle" font-size="11" fill="#64748b">bond order, length, energy</text>
+  <line x1="520" y1="108" x2="455" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#cb)"/>
+
+  <!-- VSEPR -->
+  <rect x="590" y="150" width="210" height="96" rx="10" fill="#fdf3e3" stroke="#b45309"/>
+  <text x="695" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#b45309">VSEPR &amp; shape</text>
+  <text x="695" y="195" text-anchor="middle" font-size="12" fill="#334155">pairs repel → geometry</text>
+  <text x="695" y="214" text-anchor="middle" font-size="11.5" fill="#334155">lp > bp repulsion</text>
+  <text x="695" y="233" text-anchor="middle" font-size="11" fill="#64748b">H₂O bent, NH₃ pyramidal</text>
+  <line x1="600" y1="108" x2="665" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#cb)"/>
+
+  <!-- Hybridization -->
+  <rect x="840" y="150" width="210" height="96" rx="10" fill="#fdeaef" stroke="#be123c"/>
+  <text x="945" y="173" text-anchor="middle" font-size="13.5" font-weight="700" fill="#be123c">Hybridization</text>
+  <text x="945" y="195" text-anchor="middle" font-size="12" fill="#334155">steric no. → sp/sp²/sp³</text>
+  <text x="945" y="214" text-anchor="middle" font-size="11.5" fill="#334155">σ + lone pairs only</text>
+  <text x="945" y="233" text-anchor="middle" font-size="11" fill="#64748b">π uses unhybridized p</text>
+  <line x1="640" y1="100" x2="890" y2="150" stroke="#475569" stroke-width="1.4" marker-end="url(#cb)"/>
+
+  <!-- Advanced band -->
+  <text x="560" y="290" text-anchor="middle" font-size="12.5" font-weight="700" fill="#6d28d9">ADVANCED — explain what Lewis can't</text>
+
+  <rect x="150" y="310" width="250" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="275" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">MOT &amp; bond order</text>
+  <text x="275" y="355" text-anchor="middle" font-size="11.5" fill="#334155">BO = (N_b − N_a)/2</text>
+  <text x="275" y="374" text-anchor="middle" font-size="11.5" fill="#334155">O₂ paramagnetic</text>
+
+  <rect x="435" y="310" width="250" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="560" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Resonance &amp; polarity</text>
+  <text x="560" y="355" text-anchor="middle" font-size="11.5" fill="#334155">hybrid → extra stability</text>
+  <text x="560" y="374" text-anchor="middle" font-size="11.5" fill="#334155">μ = q·d (vector)</text>
+
+  <rect x="720" y="310" width="250" height="86" rx="10" fill="#f1ebfe" stroke="#6d28d9"/>
+  <text x="845" y="333" text-anchor="middle" font-size="13" font-weight="700" fill="#6d28d9">Fajans &amp; H-bonding</text>
+  <text x="845" y="355" text-anchor="middle" font-size="11.5" fill="#334155">covalent character</text>
+  <text x="845" y="374" text-anchor="middle" font-size="11.5" fill="#334155">H–F/O/N → high b.p.</text>
+
+  <text x="560" y="422" text-anchor="middle" font-size="11.5" fill="#64748b">Count electrons, then let repulsion (VSEPR), overlap (hybridization) or MO energy (MOT) decide.</text>
+</svg>
